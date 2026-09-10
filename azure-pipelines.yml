@@ -1,0 +1,27 @@
+trigger:
+  branches:
+    include: [main]
+pool:
+  vmImage: ubuntu-latest
+steps:
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: '3.12'
+  - script: |
+      python -m pip install uv
+      uv sync --frozen --extra dev
+      uv run ruff check src tests scripts
+      uv run pytest -q
+    displayName: Test registry and source contracts
+  - task: AzureCLI@2
+    inputs:
+      azureSubscription: $(AzureServiceConnection)
+      scriptType: bash
+      scriptLocation: inlineScript
+      inlineScript: |
+        set -euo pipefail
+        az bicep build --file infra/main.bicep
+        az acr build --registry "$(ContainerRegistryName)" --platform linux/amd64 --image "funding-registry:$(Build.SourceVersion)" .
+    displayName: Validate infrastructure and build immutable release
+  # Production deployment uses a city-controlled release stage/environment approval.
+  # Run database migration over the approved private network before enabling the job.

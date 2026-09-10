@@ -1,0 +1,1261 @@
+[
+  {
+    "id": "eu-funding",
+    "name": "EU Funding & Tenders",
+    "url": "https://api.tech.ec.europa.eu/search-api/prod/rest/search",
+    "adapter": "eu_funding",
+    "category": "EU",
+    "coverage": "Julkisen rajapinnan rahoitustyypit 1 ja 8, kaikki tilat, englanninkieliset ilmoitukset. Horizon Europe, LIFE, Digital Europe, CERV, CEF, Creative Europe, EU4Health, Erasmus+ keskitetyt haut ja muut portaalin ohjelmat. Portaalin ulkopuoliset haut edellyttävät lisälähteitä. Tyyppi 8 sisältää FSTP/kaskadihaut. Sama keruu, erillinen cascade-suodatin ja prioriteettiryhmä 1; ei päällekkäistä liitintä.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "api.tech.ec.europa.eu"
+    ],
+    "max_pages": 500
+  },
+  {
+    "id": "haeavustuksia",
+    "name": "Haeavustuksia.fi",
+    "url": "https://www.haeavustuksia.fi/api/haku/list-items",
+    "adapter": "haeavustuksia",
+    "category": "Valtionavustukset",
+    "coverage": "Kaikki julkisen listauksen hakuilmoitukset ja tilat. Sisältää ministeriöiden, virastojen ja elinvoimakeskusten ilmoituksia. Luetaan julkisen käyttöliittymän käyttämää rajapintaa; ei luvattua pysyvää API-sopimusta.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "www.haeavustuksia.fi"
+    ],
+    "max_pages": 200
+  },
+  {
+    "id": "eura2021",
+    "name": "EURA 2021",
+    "url": "https://eura2021.fi/hakuilmoitukset/",
+    "adapter": "eura2021",
+    "category": "Alue- ja rakennerahastot",
+    "coverage": "EAKR, ESR+ ja JTF; kaikki julkisen listan hakuilmoitukset. Aluerajaus lähteen maakunnista. Alueen ulkopuolinen haku säilytetään kumppanuuden arviointia varten.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "eura2021.fi"
+    ]
+  },
+  {
+    "id": "pirkanmaa",
+    "name": "Pirkanmaan liitto",
+    "url": "https://www.pirkanmaa.fi/pirkanmaan-liitto-rahoittajana/",
+    "adapter": "page_watch",
+    "category": "Alueellinen",
+    "coverage": "AKKE, alueellinen kehittäminen ja EAKR. Sivumuutosten seuranta; yksittäiset haut tarkistetaan. Seurantataso: sivumuutokset, vaatii ilmoituskohtaisen tarkistuksen.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "www.pirkanmaa.fi",
+      "www.tampereregion.fi",
+      "tampereregion.fi"
+    ],
+    "selector": "main, article, #content"
+  },
+  {
+    "id": "pirkanmaa-akke",
+    "name": "Pirkanmaan AKKE",
+    "url": "https://www.pirkanmaa.fi/pirkanmaan-liitto-rahoittajana/alueiden-kestavan-kasvun-ja-elinvoiman-tukeminen/",
+    "adapter": "funding_pages",
+    "category": "Alueellinen",
+    "coverage": "AKKE-rahoitusmuodon julkinen sisältö ja muutokset päivittäin. Myöntövarat ja hakukierroksen tila tarkistetaan lähteestä.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "www.pirkanmaa.fi",
+      "www.tampereregion.fi",
+      "tampereregion.fi"
+    ],
+    "selector": "main, article, #content",
+    "record_kind": "funding_scheme",
+    "pages": [
+      {
+        "url": "https://www.pirkanmaa.fi/pirkanmaan-liitto-rahoittajana/alueiden-kestavan-kasvun-ja-elinvoiman-tukeminen/",
+        "title": "Pirkanmaan liitto – AKKE-rahoitus"
+      }
+    ],
+    "watch_catalogue": true,
+    "funder": "Pirkanmaan liitto",
+    "geographic_scope": "pirkanmaa"
+  },
+  {
+    "id": "sitra",
+    "name": "Sitra",
+    "url": "https://www.sitra.fi/hae-rahoitusta/rahoitushaut/",
+    "adapter": "sitra",
+    "category": "Kansallinen",
+    "coverage": "Sitran julkisen WordPress-rajapinnan kaikki suomenkieliset rahoitushaut, sivutus ja kokonaismäärän täsmäytys. Hakukohtaiset sisällöt, ohjelma, tila ja määräajat; kelpoisuus arvioidaan erikseen.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "www.sitra.fi"
+    ],
+    "selector": "main, article, #content",
+    "api_url": "https://www.sitra.fi/wp-json/wp/v2/funding_request"
+  },
+  {
+    "id": "business-finland",
+    "name": "Business Finland",
+    "url": "https://www.businessfinland.fi/palvelut/rahoitus/rahoituspalvelut/",
+    "adapter": "funder_catalogue",
+    "category": "Kansallinen",
+    "coverage": "Rahoituspalvelujen kaikki yksittäiset rahoitusmuodot ja niiden sisältösivut. Mukana myös yritys- ja tutkimuskumppaneiden rahoitus. Rahoitusmuoto ei tarkoita avointa hakua; käytöstä poistuminen näkyy kuvauksessa. Avustus/laina/verohyvitys tarkistetaan muodosta.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "www.businessfinland.fi",
+      "www.businessfinland.com",
+      "businessfinland.fi"
+    ],
+    "selector": "main, article, #content",
+    "funder": "Business Finland",
+    "record_kind": "funding_scheme",
+    "geographic_scope": "finland",
+    "card_selector": "a.break-inside-avoid",
+    "link_is_card": true,
+    "title_selector": ".headline-h3",
+    "fetch_details": true,
+    "instrument": "other"
+  },
+  {
+    "id": "oph",
+    "name": "Opetushallitus",
+    "url": "https://www.oph.fi/fi/rahoitushaut",
+    "adapter": "funder_catalogue",
+    "category": "Koulutus ja nuoriso",
+    "coverage": "Opetushallituksen rahoitushakukortit kaikilta listauksen sivuilta: otsikko, määräaika, tila, lähdeosoite ja luokittelu. Sisältää myös kansainvälistymisrahoituksen. Pelkät akkreditoinnit ja laatumerkit ohitetaan; yksityiskohtaiset ehdot tarkistetaan linkistä. Mukana Erasmus+ ja Luova Eurooppa, myös kansallinen vastinraha. Kelpoisuus ja keskitetyn EU-haun suhde kansalliseen hakuun tarkistettava.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "www.oph.fi"
+    ],
+    "selector": "main, article, #content",
+    "funder": "Opetushallitus",
+    "record_kind": "call",
+    "geographic_scope": "international",
+    "card_selector": ".listing-item-content",
+    "link_selector": ".listing-title__link",
+    "date_selector": ".field-application-period",
+    "status_selector": ".field-funding-state",
+    "date_is_period": true,
+    "next_selector": "a[rel=\"next\"]",
+    "exclude_title": "akkreditointihaku|laatumerkki"
+  },
+  {
+    "id": "interreg-baltic",
+    "name": "Interreg Baltic Sea Region",
+    "url": "https://interreg-baltic.eu/gateway/",
+    "adapter": "funding_pages",
+    "category": "Interreg",
+    "coverage": "Ohjelman rahoitusreitti, hakutilanne, ohjeet ja liiteviitteet kokonaisuudessaan. Päivittäinen muutosseuranta; uusia hakukierroksia ei päätellä ohjelmasivun päivämääristä.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "interreg-baltic.eu"
+    ],
+    "selector": "main, article, #content",
+    "funder": "Interreg Baltic Sea Region",
+    "record_kind": "funding_scheme",
+    "geographic_scope": "international",
+    "pages": [
+      {
+        "url": "https://interreg-baltic.eu/gateway/",
+        "title": "Interreg Baltic Sea Region – hankerahoitus ja hakutilanne"
+      },
+      {
+        "url": "https://interreg-baltic.eu/funding/checklist/",
+        "title": "Interreg Baltic Sea Region – hakijakelpoisuus"
+      }
+    ],
+    "language": "en",
+    "watch_catalogue": true,
+    "eligibility_note": "Suomi kuuluu ohjelman toiminta-alueeseen, mutta organisaatiotyyppi, konsortio, toiminnan alue ja kustannukset tarkistetaan hausta. Ohjelma ilmoittaa, ettei uusia hankehakuja ole avoinna."
+  },
+  {
+    "id": "interreg-europe",
+    "name": "Interreg Europe",
+    "url": "https://www.interregeurope.eu/call-for-projects",
+    "adapter": "funding_pages",
+    "category": "Interreg",
+    "coverage": "Ohjelman rahoitusreitti, hakutilanne, ohjeet ja liiteviitteet kokonaisuudessaan. Päivittäinen muutosseuranta; uusia hakukierroksia ei päätellä ohjelmasivun päivämääristä.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "www.interregeurope.eu"
+    ],
+    "selector": "main, article, #content",
+    "funder": "Interreg Europe",
+    "record_kind": "funding_scheme",
+    "geographic_scope": "international",
+    "pages": [
+      {
+        "url": "https://www.interregeurope.eu/call-for-projects",
+        "title": "Interreg Europe – hankerahoitus ja ohjelman hakutilanne"
+      },
+      {
+        "url": "https://www.interregeurope.eu/call-for-pilot-actions",
+        "title": "Interreg Europe – hyväksyttyjen hankkeiden pilottitoimet"
+      }
+    ],
+    "language": "en",
+    "watch_catalogue": true,
+    "eligibility_note": "Tampereen rooli ja kumppanuusvaatimukset tarkistetaan ohjelmakäsikirjasta. Pilottihaku koskee vain ohjelmassa hyväksyttyjä hankkeita; ohjelman kaikki varat on tällä hetkellä sidottu."
+  },
+  {
+    "id": "central-baltic",
+    "name": "Central Baltic",
+    "url": "https://centralbaltic.eu/for-applicants/",
+    "adapter": "funding_pages",
+    "category": "Interreg",
+    "coverage": "Ohjelman rahoitusreitti, hakutilanne, ohjeet ja liiteviitteet kokonaisuudessaan. Päivittäinen muutosseuranta; uusia hakukierroksia ei päätellä ohjelmasivun päivämääristä.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "centralbaltic.eu"
+    ],
+    "selector": "main, article, #content",
+    "funder": "Central Baltic",
+    "record_kind": "funding_scheme",
+    "geographic_scope": "international",
+    "pages": [
+      {
+        "url": "https://centralbaltic.eu/for-applicants/",
+        "title": "Central Baltic – hankerahoitus ja hakuohjeet"
+      },
+      {
+        "url": "https://centralbaltic.eu/for-applicants/call-calendar/",
+        "title": "Central Baltic – hakukalenteri",
+        "record_kind": "advance_information",
+        "instrument": "other"
+      },
+      {
+        "url": "https://centralbaltic.eu/programme/about-the-programme/programme-area/",
+        "title": "Central Baltic – ohjelma-alue ja kumppanuuden arviointi"
+      }
+    ],
+    "language": "en",
+    "watch_catalogue": true,
+    "eligibility_note": "Pirkanmaan ohjelma-alueasema, vähimmäiskumppanuus ja hankkeen sisältö tarkistetaan ohjelmakauden 2021–2027 alkuperäisestä käsikirjasta. Alueeseen kuuluminen ei yksin vahvista hakukelpoisuutta."
+  },
+  {
+    "id": "urbact",
+    "name": "URBACT",
+    "url": "https://urbact.eu/get-involved",
+    "adapter": "page_watch",
+    "category": "Kaupunkikehitys",
+    "coverage": "Kaupunkiverkostot, hakukierrokset ja kumppanuudet. Seurantataso: sivumuutokset, vaatii ilmoituskohtaisen tarkistuksen.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "urbact.eu"
+    ],
+    "selector": "main, article, #content"
+  },
+  {
+    "id": "eui",
+    "name": "European Urban Initiative",
+    "url": "https://www.urban-initiative.eu/",
+    "adapter": "page_watch",
+    "category": "Kaupunkikehitys",
+    "coverage": "Innovative Actions, City-to-City Exchanges ja muu kaupunkien tuki. Seurantataso: sivumuutokset, vaatii ilmoituskohtaisen tarkistuksen.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "www.urban-initiative.eu"
+    ],
+    "selector": "main, article, #content"
+  },
+  {
+    "id": "eib-elena",
+    "name": "EIB ELENA",
+    "url": "https://www.eib.org/en/products/advisory-services/elena/index",
+    "adapter": "funding_pages",
+    "category": "Investoinnit",
+    "coverage": "ELENA-tukimuodon koko julkinen kuvaus ja hakumenettely päivittäin. Investointien valmistelutuki erotetaan investointilainasta.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "www.eib.org"
+    ],
+    "selector": "main, article, #content",
+    "record_kind": "funding_scheme",
+    "pages": [
+      {
+        "url": "https://www.eib.org/en/products/advisory-services/elena/index",
+        "title": "EIB ELENA – investointien valmistelun tekninen tuki"
+      }
+    ],
+    "watch_catalogue": true,
+    "funder": "Euroopan investointipankki (EIB)",
+    "instrument": "technical_assistance",
+    "language": "en",
+    "geographic_scope": "eu"
+  },
+  {
+    "id": "eib",
+    "name": "Euroopan investointipankki",
+    "url": "https://www.eib.org/en/products/index",
+    "adapter": "funding_pages",
+    "category": "Investoinnit",
+    "coverage": "Julkisen sektorin investointi- ja puitelainojen tuotesivut päivittäin. Laina on takaisinmaksettavaa rahoitusta; lainaehto ja hankekelpoisuus arvioidaan erikseen.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "www.eib.org"
+    ],
+    "selector": "main, article, #content",
+    "record_kind": "funding_scheme",
+    "pages": [
+      {
+        "url": "https://www.eib.org/en/products/loans/public-sector.htm",
+        "title": "EIB – julkisen sektorin investointilaina"
+      },
+      {
+        "url": "https://www.eib.org/en/products/loans/framework-public-sector.htm",
+        "title": "EIB – julkisen sektorin puitelaina"
+      }
+    ],
+    "watch_catalogue": true,
+    "funder": "Euroopan investointipankki (EIB)",
+    "instrument": "loan",
+    "language": "en",
+    "geographic_scope": "eu"
+  },
+  {
+    "id": "nib",
+    "name": "Pohjoismaiden investointipankki",
+    "url": "https://www.nib.int/financing/public-sector-utilities",
+    "adapter": "funding_pages",
+    "category": "Investoinnit",
+    "coverage": "Julkisen sektorin ja yhdyskuntapalvelujen lainamuoto sekä ehdot päivittäin. Sivun myönnettyjä lainoja ei kirjata uusina hakuina.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "www.nib.int"
+    ],
+    "selector": "main, article, #content",
+    "record_kind": "funding_scheme",
+    "pages": [
+      {
+        "url": "https://www.nib.int/financing/public-sector-utilities",
+        "title": "NIB – kuntien ja julkisten palvelujen investointilainat"
+      }
+    ],
+    "watch_catalogue": true,
+    "funder": "Pohjoismaiden investointipankki (NIB)",
+    "instrument": "loan",
+    "language": "en",
+    "geographic_scope": "international"
+  },
+  {
+    "id": "nefco",
+    "name": "Nefco",
+    "url": "https://www.nefco.int/about/how-we-finance/",
+    "adapter": "funding_pages",
+    "category": "Investoinnit",
+    "coverage": "Nefcon rahoitusmalli ja eri rahastojen viitteet kokonaisuudessaan. Lainat, pääomarahoitus ja rahastokohtaiset avustukset erotetaan ehdoista. Pohjoismaiset yritykset ja Itä-Euroopan kuntahankkeet; Tampereen suoraa tukikelpoisuutta ei oleteta.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "www.nefco.int"
+    ],
+    "selector": "main, article, #content",
+    "record_kind": "funding_scheme",
+    "funder": "Nefco",
+    "instrument": "other",
+    "language": "en",
+    "geographic_scope": "international",
+    "watch_catalogue": true,
+    "pages": [
+      {
+        "url": "https://www.nefco.int/about/how-we-finance/",
+        "title": "Nefco – vihreän siirtymän rahoitus ja kumppanuudet"
+      }
+    ]
+  },
+  {
+    "id": "norden",
+    "name": "Pohjoismaiden ministerineuvosto",
+    "url": "https://www.norden.org/en/funding-opportunities",
+    "adapter": "page_watch",
+    "category": "Pohjoismainen",
+    "coverage": "Pohjoismaiset hankehaut. Listassa voi olla myös hankintoja; tarkistus ennen tuontia. Seurantataso: sivumuutokset, vaatii ilmoituskohtaisen tarkistuksen.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "www.norden.org"
+    ],
+    "selector": "main, article, #content"
+  },
+  {
+    "id": "nordic-innovation",
+    "name": "Nordic Innovation",
+    "url": "https://www.nordicinnovation.org/funding-opportunities",
+    "adapter": "funder_catalogue",
+    "category": "Pohjoismainen",
+    "coverage": "Rahoittajan koko sivutettu hakulista: hakukohtainen otsikko, tiivistelmä, julkaistu määräpäivä ja lähdelinkki. Hankintailmoitukset ohitetaan. Määräpäivä ei yksin vahvista haun avautumista; hakijan ja konsortion kelpoisuus arvioidaan.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "www.nordicinnovation.org"
+    ],
+    "selector": "main, article, #content",
+    "funder": "Nordic Innovation",
+    "record_kind": "call",
+    "geographic_scope": "international",
+    "card_selector": "article.teaser",
+    "link_selector": "h4 a",
+    "date_selector": ".teaser__date",
+    "next_selector": "a[rel=\"next\"]",
+    "language": "en",
+    "timezone": "Europe/Oslo",
+    "include_url": "/programs/",
+    "exclude_title": "invitation (?:to|for) tender|procurement|tendering"
+  },
+  {
+    "id": "nordforsk",
+    "name": "NordForsk",
+    "url": "https://www.nordforsk.org/calls",
+    "adapter": "funder_catalogue",
+    "category": "Pohjoismainen",
+    "coverage": "Rahoittajan koko sivutettu hakulista: hakukohtainen otsikko, tiivistelmä, julkaistu määräpäivä ja lähdelinkki. Hankintailmoitukset ohitetaan. Määräpäivä ei yksin vahvista haun avautumista; hakijan ja konsortion kelpoisuus arvioidaan.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "www.nordforsk.org"
+    ],
+    "selector": "main, article, #content",
+    "funder": "NordForsk",
+    "record_kind": "call",
+    "geographic_scope": "international",
+    "card_selector": "article.related",
+    "link_selector": "h4 a",
+    "date_selector": ".tag-danger",
+    "next_selector": "a[rel=\"next\"]",
+    "language": "en",
+    "timezone": "Europe/Oslo",
+    "include_url": "/calls/",
+    "exclude_title": "invitation (?:to|for) tender|procurement|tendering"
+  },
+  {
+    "id": "nordic-culture",
+    "name": "Nordic Culture Point",
+    "url": "https://www.nkk.org/en/apply-for-funding/",
+    "adapter": "funding_pages",
+    "category": "Kulttuuri",
+    "coverage": "Kaikki rahoitusluettelon 8 ohjelmaa omine sisältösivuineen: kulttuuri ja taide, Demos, Volt, Norden 0–30, liikkuvuus, residenssit ja verkostot. Hakukierrosten päivät säilyvät tekstissä; luettelon muutokset tarkistusjonoon.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "www.nkk.org",
+      "nkk.org",
+      "www.nordiskkulturkontakt.org"
+    ],
+    "selector": "main, article, #content",
+    "funder": "Pohjoismainen kulttuuripiste",
+    "record_kind": "funding_scheme",
+    "language": "en",
+    "geographic_scope": "international",
+    "watch_catalogue": true,
+    "pages": [
+      {
+        "url": "https://www.nkk.org/en/culture-and-art-programme/",
+        "title": "Culture and art programme"
+      },
+      {
+        "url": "https://www.nkk.org/en/demos/",
+        "title": "Demos"
+      },
+      {
+        "url": "https://www.nkk.org/en/volt/",
+        "title": "Volt"
+      },
+      {
+        "url": "https://www.nkk.org/en/mobility-funding/",
+        "title": "Mobility funding"
+      },
+      {
+        "url": "https://www.nkk.org/en/norden-0-30-grant-programme/",
+        "title": "Norden 0–30"
+      },
+      {
+        "url": "https://www.nkk.org/en/funding-for-artist-residencies/",
+        "title": "Funding for artist residencies"
+      },
+      {
+        "url": "https://www.nkk.org/en/long-term-network-funding/",
+        "title": "Long-term network funding"
+      },
+      {
+        "url": "https://www.nkk.org/en/short-term-network-funding/",
+        "title": "Short-term network funding"
+      }
+    ]
+  },
+  {
+    "id": "skr",
+    "name": "Suomen Kulttuurirahasto",
+    "url": "https://skr.fi/apurahat/",
+    "adapter": "funding_pages",
+    "category": "Säätiöt",
+    "coverage": "Apurahojen hakijasivu kokonaisuudessaan, mukaan lukien keskus- ja maakuntarahastojen hakumenettely. Vuosittaiset ja erityiset hakukierrokset varmistetaan lähteestä. Hakeminen ei rajaudu vain kaupungin omaan organisaatioon.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "skr.fi"
+    ],
+    "selector": "main, article, #content",
+    "record_kind": "funding_scheme",
+    "pages": [
+      {
+        "url": "https://skr.fi/apurahat/apurahan-hakijalle/",
+        "title": "Suomen Kulttuurirahasto – tieteen ja taiteen apurahat"
+      }
+    ],
+    "watch_catalogue": true,
+    "funder": "Suomen Kulttuurirahasto",
+    "geographic_scope": "finland"
+  },
+  {
+    "id": "kone",
+    "name": "Koneen Säätiö",
+    "url": "https://koneensaatio.fi/apurahat/apurahanhakijalle/",
+    "adapter": "funding_pages",
+    "category": "Säätiöt",
+    "coverage": "Yleisen apurahan hakukriteerit ja Metsän puolella -rahoituskokonaisuus päivittäin sisältöineen. Erilliset hakukierrokset ja residenssit eivät vielä jäsenny hakutietueiksi; hakijasivun muutoksista syntyy tarkistusjono.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "koneensaatio.fi"
+    ],
+    "selector": "main, article, #content",
+    "record_kind": "funding_scheme",
+    "pages": [
+      {
+        "url": "https://koneensaatio.fi/apurahat/apurahanhakijalle/hakukriteerit/",
+        "title": "Koneen Säätiö – yleinen tieteen ja taiteen apuraha"
+      },
+      {
+        "url": "https://koneensaatio.fi/metsanpuolella/",
+        "title": "Koneen Säätiö – Metsän puolella"
+      }
+    ],
+    "watch_catalogue": true,
+    "funder": "Koneen Säätiö",
+    "geographic_scope": "finland"
+  },
+  {
+    "id": "tsr",
+    "name": "Työsuojelurahasto",
+    "url": "https://www.tsr.fi/rahoitus-organisaatioille/",
+    "adapter": "funder_catalogue",
+    "category": "Työelämä",
+    "coverage": "Organisaatioiden tutkimus-, kehittämis-, koulutusmenetelmä-, viestintä- ja konferenssirahoituksen kaikki listatut rahoitusmuodot sisältösivuineen. Hakukierrosten ajat säilyvät lähdetekstissä; kelpoisuus ja ajankohta tarkistetaan.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "www.tsr.fi"
+    ],
+    "selector": "main, article, #content",
+    "funder": "Työsuojelurahasto",
+    "record_kind": "funding_scheme",
+    "geographic_scope": "finland",
+    "card_selector": "a.liftups__grid__item--funding-large",
+    "link_is_card": true,
+    "title_selector": "h3",
+    "fetch_details": true
+  },
+  {
+    "id": "aka",
+    "name": "Suomen Akatemia",
+    "url": "https://www.aka.fi/tutkimusrahoitus/hae-rahoitusta/haut/",
+    "adapter": "funder_catalogue",
+    "category": "Tutkimus",
+    "coverage": "Akatemian Haut-sivun kaikki hakukortit, julkaistut alkamis- ja päättymisajat ja lähdelinkit. Kansainvälisten kumppanuushakujen lisäluetteloa seurataan ohjelmalinkkeinä. Historiallisten arkistojen kaikkia hakuja ei vielä poimita.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "www.aka.fi"
+    ],
+    "selector": "main, article, #content",
+    "funder": "Suomen Akatemia",
+    "record_kind": "call",
+    "card_selector": ".application-box",
+    "link_selector": "h3 a[href]",
+    "date_selector": ".app-end",
+    "open_date_selector": ".app-start",
+    "geographic_scope": "international",
+    "eligibility_note": "Kaupunki voi olla tutkimuskumppani tai tiedon hyödyntäjä. Suoraa hakijakelpoisuutta tai konsortioroolia ei vahvisteta automaattisesti.",
+    "watch_catalogue": true
+  },
+  {
+    "id": "kuntasaatio",
+    "name": "Kunnallisalan kehittämissäätiö",
+    "url": "https://kaks.fi/",
+    "adapter": "funding_pages",
+    "category": "Säätiöt",
+    "coverage": "Kunnallisalan kehittämissäätiön apurahojen hakukriteerit ja hakuohjeet päivittäin kokonaisuudessaan. Soveltuu myös kaupungin tutkimuskumppanuuksien tarkasteluun; kelpoisuus arvioitava.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "kaks.fi"
+    ],
+    "selector": "main, article, #content",
+    "record_kind": "funding_scheme",
+    "pages": [
+      {
+        "url": "https://kaks.fi/apurahat/apurahanhakijalle/",
+        "title": "KAKS – kunnallisalan tutkimuksen apurahat"
+      }
+    ],
+    "watch_catalogue": true,
+    "funder": "Kunnallisalan kehittämissäätiö",
+    "geographic_scope": "finland"
+  },
+  {
+    "id": "jane-atos",
+    "name": "Jane ja Aatos Erkon säätiö",
+    "url": "https://jaes.fi/",
+    "adapter": "funding_pages",
+    "category": "Säätiöt",
+    "coverage": "Avustusten hakijasivu ehtoineen päivittäin. Sisältää tiede-, taide- ja kulttuurihankkeet; kaupungin tai kumppanin kelpoisuutta ei oleteta.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "jaes.fi"
+    ],
+    "selector": "main, article, #content",
+    "record_kind": "funding_scheme",
+    "pages": [
+      {
+        "url": "https://jaes.fi/hakijalle/",
+        "title": "Jane ja Aatos Erkon säätiö – tutkimuksen, taiteen ja kulttuurin avustukset"
+      }
+    ],
+    "watch_catalogue": true,
+    "funder": "Jane ja Aatos Erkon säätiö",
+    "geographic_scope": "finland"
+  },
+  {
+    "id": "maaseutu",
+    "name": "Ruokavirasto: yleishyödylliset investoinnit",
+    "url": "https://www.ruokavirasto.fi/tuet/maaseudun-palvelut-ja-elinkeinojen-kehittaminen/investoinnit/yleishyodylliset-investoinnit-maaseudun-toimintaympariston-kehittamiseen/",
+    "adapter": "funding_pages",
+    "category": "Maaseutu",
+    "coverage": "Yleishyödyllisten maaseutuinvestointien rahoitusmuoto ja ehdot päivittäin. Tampereen alueen ja hankkeen kelpoisuus sekä Leader/elinvoimakeskuksen haku arvioidaan erikseen.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "www.ruokavirasto.fi"
+    ],
+    "selector": "body",
+    "record_kind": "funding_scheme",
+    "pages": [
+      {
+        "url": "https://www.ruokavirasto.fi/tuet/maaseudun-palvelut-ja-elinkeinojen-kehittaminen/investoinnit/yleishyodylliset-investoinnit-maaseudun-toimintaympariston-kehittamiseen/",
+        "title": "Maaseudun yleishyödylliset investointituet"
+      }
+    ],
+    "watch_catalogue": true,
+    "funder": "Ruokavirasto / alueelliset rahoittajat",
+    "geographic_scope": "finland"
+  },
+  {
+    "id": "tampere-eu",
+    "name": "Tampereen ja Pirkanmaan EU-toimisto",
+    "url": "https://tampere.eu/",
+    "adapter": "page_watch",
+    "category": "Täydentävä tieto",
+    "coverage": "Alueen rahoitusuutiset ja kumppanuudet. Uutinen ei sellaisenaan ole hakuilmoitus. Seurantataso: sivumuutokset, vaatii ilmoituskohtaisen tarkistuksen.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "tampere.eu"
+    ],
+    "selector": "main, article, #content"
+  },
+  {
+    "id": "business-tampere",
+    "name": "Business Tampere",
+    "url": "https://businesstampere.com/fi/",
+    "adapter": "page_watch",
+    "category": "Täydentävä tieto",
+    "coverage": "Alueen ekosysteemit ja yritysten rahoitus; etusivun seuranta. Seurantataso: sivumuutokset, vaatii ilmoituskohtaisen tarkistuksen.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "businesstampere.com",
+      "businesstampere.com",
+      "www.businesstampere.com"
+    ],
+    "selector": "main, article, #content"
+  },
+  {
+    "id": "eit",
+    "name": "European Institute of Innovation and Technology",
+    "url": "https://www.eit.europa.eu/our-activities/opportunities",
+    "adapter": "page_watch",
+    "category": "EU:n välillinen rahoitus",
+    "coverage": "EIT ja osaamisyhteisöjen edelleen jakama rahoitus. Osa hauista julkaistaan vain KIC-kohtaisilla sivuilla. Seurantataso: sivumuutokset, vaatii ilmoituskohtaisen tarkistuksen.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "www.eit.europa.eu",
+      "eit.europa.eu"
+    ],
+    "selector": "main, article, #content"
+  },
+  {
+    "id": "netzero",
+    "name": "NetZeroCities",
+    "url": "https://netzerocities.eu/",
+    "adapter": "page_watch",
+    "category": "Kaupunkikehitys",
+    "coverage": "Kaupunkimission tuki ja erilliset ohjelmahaut; etusivun seuranta. Seurantataso: sivumuutokset, vaatii ilmoituskohtaisen tarkistuksen.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "netzerocities.eu"
+    ],
+    "selector": "main, article, #content"
+  },
+  {
+    "id": "eucf",
+    "name": "European City Facility",
+    "url": "https://www.eucityfacility.eu/calls",
+    "adapter": "funder_catalogue",
+    "category": "Kaupunkien valmistelurahoitus",
+    "coverage": "Kaikki julkisen Calls-listan hakukortit. Julkaisupäivää ei tulkita hakuajan päättymiseksi; tarkka hakuaika ja ehdot avataan lähdelinkistä.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "www.eucityfacility.eu",
+      "eucityfacility.eu"
+    ],
+    "selector": "main, article, #content",
+    "card_selector": "a.ce-linked[href^=\"/calls/call-\"]",
+    "link_is_card": true,
+    "title_selector": "h3",
+    "record_kind": "call",
+    "funder": "European City Facility (EUCF)",
+    "language": "en",
+    "geographic_scope": "eu"
+  },
+  {
+    "id": "ceb",
+    "name": "Euroopan neuvoston kehityspankki",
+    "url": "https://coebank.org/en/project-financing/sectors/",
+    "adapter": "page_watch",
+    "category": "Investoinnit",
+    "coverage": "Sosiaaliset investoinnit ja kaupunkikehitys; lainarahoitus. Sivumuutosten seuranta, ei automaattista luottokelpoisuusarviota.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "coebank.org",
+      "www.coebank.org"
+    ],
+    "selector": "body"
+  },
+  {
+    "id": "manual",
+    "name": "Asiantuntijan lisäämät ilmoitukset",
+    "url": "https://www.tampere.fi/",
+    "adapter": "manual",
+    "category": "Täydentävä tieto",
+    "coverage": "Sähköpostit, verkostot, säätiöt, lahjoitukset, sponsorointi ja neuvoteltu rahoitus. Vain julkinen lähdeviite ja tarkistettu ilmoitus tuodaan. Ei automaattista sähköpostien käsittelyä.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": false,
+    "allowed_hosts": []
+  },
+  {
+    "id": "wihuri",
+    "name": "Jenny ja Antti Wihurin rahasto",
+    "url": "https://wihurinrahasto.fi/apurahanhakijalle/",
+    "adapter": "funding_pages",
+    "category": "Säätiöt",
+    "coverage": "Rahoitusmuodon hakukriteerit ja julkiset hakuohjeet päivittäin. Kaupunki, kaupunkikonserni ja kumppanihanke arvioidaan erikseen; kyse ei ole vahvistetusta avoimesta hakukierroksesta.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "wihurinrahasto.fi"
+    ],
+    "pages": [
+      {
+        "url": "https://wihurinrahasto.fi/apurahanhakijalle/",
+        "title": "Jenny ja Antti Wihurin rahasto – yhteisöjen apurahat"
+      }
+    ],
+    "funder": "Jenny ja Antti Wihurin rahasto",
+    "language": "fi",
+    "geographic_scope": "finland",
+    "record_kind": "funding_scheme",
+    "watch_catalogue": true,
+    "selector": "main, article, #content"
+  },
+  {
+    "id": "kulturfonden",
+    "name": "Svenska kulturfonden",
+    "url": "https://www.kulturfonden.fi/bidrag-for-foreningar-och-organisationer/",
+    "adapter": "funding_pages",
+    "category": "Säätiöt",
+    "coverage": "Rahoitusmuodon hakukriteerit ja julkiset hakuohjeet päivittäin. Kaupunki, kaupunkikonserni ja kumppanihanke arvioidaan erikseen; kyse ei ole vahvistetusta avoimesta hakukierroksesta.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "www.kulturfonden.fi"
+    ],
+    "pages": [
+      {
+        "url": "https://www.kulturfonden.fi/bidrag-for-foreningar-och-organisationer/",
+        "title": "Svenska kulturfonden – yhteisöjen apurahat"
+      }
+    ],
+    "funder": "Svenska kulturfonden",
+    "language": "sv",
+    "geographic_scope": "finland",
+    "record_kind": "funding_scheme",
+    "watch_catalogue": true,
+    "selector": "main, article, #content"
+  },
+  {
+    "id": "nessling",
+    "name": "Maj ja Tor Nesslingin säätiö",
+    "url": "https://nessling.fi/rahoitushaut/",
+    "adapter": "funding_pages",
+    "category": "Säätiöt",
+    "coverage": "Yleisen rahoitushaun toimintahankeohje, pienhaku ja Murros-ohjelma sisältöineen päivittäin. Tutkimuskumppanuudet ja tutkittuun tietoon perustuva toiminta; hakukelpoisuus ja kierroksen tila tarkistettava.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "nessling.fi",
+      "www.nessling.fi"
+    ],
+    "funder": "Maj ja Tor Nesslingin säätiö",
+    "record_kind": "funding_scheme",
+    "geographic_scope": "finland",
+    "watch_catalogue": true,
+    "selector": "main, article, #content",
+    "pages": [
+      {
+        "url": "https://nessling.fi/hakuohje-toimintahanke/",
+        "title": "Nessling – toimintahankerahoitus"
+      },
+      {
+        "url": "https://nessling.fi/pienhaku/",
+        "title": "Nessling – pienhaku"
+      },
+      {
+        "url": "https://nessling.fi/murros/",
+        "title": "Nessling – Murros-rahoitus"
+      }
+    ]
+  },
+  {
+    "id": "ym",
+    "name": "Ympäristöministeriö",
+    "url": "https://ym.fi/avustukset-ja-tuet",
+    "adapter": "funding_pages",
+    "category": "Valtionavustukset",
+    "coverage": "Ministeriön omat rahoitusmuodot, vuosittaiset avustukset ja vihreän siirtymän tukiehdot. Hakuilmoitukset myös Haeavustuksia.fi-lähteestä. Koontisivun uudet ohjelmat tarkistusjonoon.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "ym.fi"
+    ],
+    "selector": "main, article, #content",
+    "funder": "Ympäristöministeriö",
+    "record_kind": "funding_scheme",
+    "geographic_scope": "finland",
+    "watch_catalogue": true,
+    "pages": [
+      {
+        "url": "https://ym.fi/ymparistoministerion-erityisavustukset",
+        "title": "Ympäristöministeriön erityisavustukset"
+      },
+      {
+        "url": "https://ym.fi/ymparistohallinnon-harkinnanvaraiset-valtionavustukset",
+        "title": "Ympäristöhallinnon vuosittain myönnettävät valtionavustukset"
+      },
+      {
+        "url": "https://ym.fi/avustukset-ja-tuet/euroopan-aluekehitysrahasto",
+        "title": "Euroopan aluekehitysrahaston rahoitus vihreän siirtymän kehittämishankkeille"
+      },
+      {
+        "url": "https://ym.fi/avustukset-vihrean-siirtyman-investointihankkeiden-edistamiseksi",
+        "title": "Avustukset vihreän siirtymän investointihankkeiden edistämiseksi"
+      }
+    ]
+  },
+  {
+    "id": "varke",
+    "name": "Varke (entinen ARA)",
+    "url": "https://www.varke.fi/fi/yhteisot-ja-yhtiot/avustukset-yhteisoille-ja-yhtioille",
+    "adapter": "funder_catalogue",
+    "category": "Asuminen ja ympäristö",
+    "coverage": "Yhteisöjen ja yhtiöiden avustusmuodot sisältöineen. Sisältää myös päättyneitä tukimuotoja; avoimuus ei seuraa luettelossa esiintymisestä. ARA:n tehtäviä hoitaa Varke 1.3.2025 alkaen.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "www.varke.fi"
+    ],
+    "selector": "main, article, #content",
+    "funder": "Varke (entinen ARA)",
+    "record_kind": "funding_scheme",
+    "geographic_scope": "finland",
+    "card_selector": ".list-links__item",
+    "link_selector": "a[href]",
+    "exclude_title": "Lisätietoa päättyneistä",
+    "fetch_details": true,
+    "eligibility_note": "Kaupunki, sen omistama yhtiö ja muut yhteisöt arvioidaan tukimuodoittain. Päättynyt tuki säilyy historiatietona."
+  },
+  {
+    "id": "pirkanmaa-myr",
+    "name": "Pirkanmaan MYR – ohjelmavalmistelu",
+    "url": "https://www.pirkanmaa.fi/pirkanmaan-liitto-ja-paatoksenteko/maakunnan-yhteistyoryhma/",
+    "adapter": "funding_pages",
+    "category": "Alueellinen ennakkotieto",
+    "coverage": "Maakunnan yhteistyöryhmän tehtävät ja päätösaineiston viitteet. Ennakkotieto on oma tietuetyyppinsä. Päätöspalvelun seurannalla on erillinen lähdetila.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "www.pirkanmaa.fi"
+    ],
+    "selector": "main, article, #content",
+    "funder": "Pirkanmaan liitto",
+    "record_kind": "advance_information",
+    "geographic_scope": "pirkanmaa",
+    "instrument": "other",
+    "pages": [
+      {
+        "url": "https://www.pirkanmaa.fi/pirkanmaan-liitto-ja-paatoksenteko/maakunnan-yhteistyoryhma/",
+        "title": "Pirkanmaan MYR – rahoituksen linjaukset ja päätösaineiston viitteet"
+      }
+    ],
+    "watch_catalogue": true
+  },
+  {
+    "id": "pirkanmaa-myr-decisions",
+    "name": "Pirkanmaan MYR – päätöspalvelu",
+    "url": "https://pirkanmaajulkaisu.triplancloud.fi/",
+    "adapter": "page_watch",
+    "category": "Alueellinen ennakkotieto",
+    "coverage": "Julkinen päätöspalvelu, jossa MYR:n esityslistat ja pöytäkirjat julkaistaan. Sivuseuranta; kokouskohtainen poiminta puuttuu, kunnes julkinen rajapinta on toteutettu. Yhteyden epäonnistuminen jää näkyviin.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "pirkanmaajulkaisu.triplancloud.fi"
+    ],
+    "selector": "main, #content, body",
+    "funder": "Pirkanmaan MYR – päätöspalvelu",
+    "record_kind": "funding_scheme",
+    "geographic_scope": "pirkanmaa"
+  },
+  {
+    "id": "pirkanmaa-elinvoima",
+    "name": "Elinvoimakeskukset – Pirkanmaan ELY:n jatkavat rahoituskanavat",
+    "url": "https://elinvoimakeskus.fi/palveluhaku?p_p_id=fi_ely_ptv_data_search_web_portlet_PtvDataSearchPortlet&p_p_lifecycle=0&p_p_state=exclusive&p_p_mode=view&_fi_ely_ptv_data_search_web_portlet_PtvDataSearchPortlet_mvcRenderCommandName=%2FlistView",
+    "adapter": "funder_catalogue",
+    "category": "Alueellinen ja kansallinen",
+    "coverage": "Elinvoimakeskusten koko julkisen palveluhaun rahoitus- ja avustusmuodot EURAn ulkopuolelta. Sisältää kansalliset ja muidenkin alueiden muodot, jotta Pirkanmaan keskitetyt palvelut eivät jää pois. Toimivaltainen keskus, kohdealue ja hakukelpoisuus tarkistetaan muodosta.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "elinvoimakeskus.fi"
+    ],
+    "selector": ".ely-search-results",
+    "funder": "Elinvoimakeskukset (toimivaltainen keskus tarkistettava)",
+    "record_kind": "funding_scheme",
+    "geographic_scope": "finland",
+    "card_selector": "a.ely-service",
+    "link_is_card": true,
+    "title_selector": "h3",
+    "include_title": "avustu|tuki|tuet|rahoitu|korvau|investoin",
+    "fetch_details": false,
+    "eligibility_note": "Pirkanmaan ELY-keskus on historiallinen nimi. Vuoden 2026 tehtäviä hoitavat Sisä-Suomen ja tehtäväkohtaisesti muut elinvoimakeskukset. Koko maan luettelossa oleminen ei vahvista aluekelpoisuutta."
+  },
+  {
+    "id": "lvm",
+    "name": "Liikenne- ja viestintäministeriö",
+    "url": "https://lvm.fi/valtionavustukset",
+    "adapter": "funding_pages",
+    "category": "Liikenne ja digi-infra",
+    "coverage": "Ministeriön valtionavustusasiakirjojen julkinen koontisivu ja muutokset. Tyhjä asiakirjalista ei tarkoita avointa hakua. Varsinaiset Traficomin haut omassa lähteessä ja Haeavustuksia.fi-palvelussa.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "lvm.fi"
+    ],
+    "selector": "main, article, #content",
+    "funder": "Liikenne- ja viestintäministeriö",
+    "record_kind": "advance_information",
+    "geographic_scope": "finland",
+    "instrument": "other",
+    "pages": [
+      {
+        "url": "https://lvm.fi/valtionavustukset",
+        "title": "LVM – valtionavustusasiakirjojen seuranta"
+      }
+    ],
+    "watch_catalogue": true
+  },
+  {
+    "id": "traficom",
+    "name": "Liikenne- ja viestintävirasto Traficom",
+    "url": "https://www.traficom.fi/fi/tuet-ja-avustukset",
+    "adapter": "funder_catalogue",
+    "category": "Liikenne ja digi-infra",
+    "coverage": "Viraston julkisen Tuet ja avustukset -luettelon rahoitusmuodot: kävely, pyöräily, joukkoliikenne, turvallisuus, laajakaista ja CEF Digital sekä muut luettelon tuet. Raportointi- ja päätöslistat eivät ole uusia tukimuotoja. Kierroskohtaiset hakuilmoitukset myös Haeavustuksia.fi-lähteestä.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "www.traficom.fi"
+    ],
+    "selector": "main, article, #content",
+    "funder": "Liikenne- ja viestintävirasto Traficom",
+    "record_kind": "funding_scheme",
+    "geographic_scope": "finland",
+    "card_selector": "a.tds-link[href]",
+    "link_is_card": true,
+    "include_title": "valtionavustu|avustukset|rahoitus|hankintatuki|tuet|tuki",
+    "exclude_title": "^Raportoi|^Myönnetyt|valtionavustushankkeet vuonna|tukimateriaalit|Tukikelpoiset|Vaikeuksissa",
+    "fetch_details": true
+  },
+  {
+    "id": "eit-urban",
+    "name": "EIT Urban Mobility",
+    "url": "https://www.eiturbanmobility.eu/join-us/call-for-proposals/",
+    "adapter": "wordpress_calls",
+    "category": "EIT-yhteisöt",
+    "coverage": "Julkisen WordPress-rajapinnan kaikki julkaistut Call for proposals -tietueet, sivutus ja kokonaismäärän täsmäytys. Avoimet ja päättyneet haut. Koko hakuteksti ja linkitetyt ehdot; määräpäivä vain nimetystä hakemusten määräaikakentästä.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "www.eiturbanmobility.eu"
+    ],
+    "selector": "main, article, #content",
+    "funder": "EIT Urban Mobility",
+    "record_kind": "call",
+    "geographic_scope": "international",
+    "api_url": "https://www.eiturbanmobility.eu/wp-json/wp/v2/call-for-proposals",
+    "status_api": "https://www.eiturbanmobility.eu/wp-json/wp/v2/status-call",
+    "post_type": "call-for-proposals",
+    "status_taxonomy": "status-call",
+    "language": "en",
+    "timezone": "Europe/Brussels"
+  },
+  {
+    "id": "eit-climate",
+    "name": "Climate KIC (EIT Climate-KIC)",
+    "url": "https://www.climate-kic.org/get-involved/open-calls/",
+    "adapter": "funder_catalogue",
+    "category": "EIT-yhteisöt",
+    "coverage": "Open Calls -sivun kaikki palvelimella julkaistut avoimet ja suljetut hakukortit. Julkinen hakuotsikko, määräaika ja sisältölinkki. Hankinnat ja asiantuntijarekrytoinnit ohitetaan otsikkosäännöllä; hankkeen rahoitusluonne ja kelpoisuus tarkistetaan ehdoista.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "www.climate-kic.org"
+    ],
+    "selector": "main, article, #content",
+    "funder": "Climate KIC (EIT Climate-KIC)",
+    "record_kind": "call",
+    "geographic_scope": "international",
+    "card_selector": "div.bg-white.rounded-20",
+    "link_selector": "a[href*=\"/open-call/\"]",
+    "title_selector": "span.text-28sn",
+    "date_selector": "p",
+    "language": "en",
+    "timezone": "Europe/Brussels",
+    "exclude_title": "request for (?:proposal|quotation)|tender|procurement|external expert|call for mentors|open call for mentors",
+    "quality_flags": [
+      "funding_or_partnership_call_requires_review"
+    ]
+  },
+  {
+    "id": "eit-digital",
+    "name": "28DIGITAL (entinen EIT Digital)",
+    "url": "https://28digital.eu/our-messages/calls-tenders",
+    "adapter": "funder_catalogue",
+    "category": "EIT-yhteisöt",
+    "coverage": "Calls & Tenders -taulukoiden rahoitus- ja kiihdytysohjelmahakujen otsikot, tilat ja linkit. Hankintapyynnöt, hallituspaikat ja asiantuntijahaut ohitetaan. Myös kumppaniorganisaatioille relevantit haut; maksullisuus ja tukimuoto tarkistetaan.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "28digital.eu"
+    ],
+    "selector": "body",
+    "funder": "28DIGITAL (entinen EIT Digital)",
+    "record_kind": "call",
+    "geographic_scope": "international",
+    "card_selector": "table.contenttable tr",
+    "link_selector": "td a[href]",
+    "status_selector": "td:nth-child(2)",
+    "skip_cards_without_link": true,
+    "language": "en",
+    "include_title": "Co-Creation|Venture Incubation|SPIN|Summer School programmes|New European Bauhaus|Water Scarcity|HEI initiative|Open Innovation|innovation activit",
+    "exclude_title": "request for|external contributors|independent|supervisory",
+    "quality_flags": [
+      "funding_or_partnership_call_requires_review"
+    ]
+  },
+  {
+    "id": "skr-pirkanmaa",
+    "name": "Kulttuurirahaston Pirkanmaan rahasto",
+    "url": "https://skr.fi/tietoa-meista/maakuntarahastot/pirkanmaa/",
+    "adapter": "funding_pages",
+    "category": "Säätiöt",
+    "coverage": "Pirkanmaan rahaston omat kohdennukset ja yhteys ajantasaiseen Kulttuurirahaston hakuun. Vuosittaista hakuaikaa ei koodata pysyväksi; nykyinen hakumenettely ja erityisehdot kerätään lähteistä.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "skr.fi"
+    ],
+    "selector": "main, article, #content",
+    "funder": "Kulttuurirahaston Pirkanmaan rahasto",
+    "record_kind": "funding_scheme",
+    "geographic_scope": "pirkanmaa",
+    "pages": [
+      {
+        "url": "https://skr.fi/tietoa-meista/maakuntarahastot/pirkanmaa/",
+        "title": "Kulttuurirahaston Pirkanmaan rahasto – tieteen ja taiteen apurahat"
+      }
+    ],
+    "watch_catalogue": true
+  },
+  {
+    "id": "herlin-tah",
+    "name": "Tiina ja Antti Herlinin säätiö",
+    "url": "https://tahsaatio.fi/saatio/tietoa-meista/",
+    "adapter": "funding_pages",
+    "category": "Säätiöt",
+    "coverage": "Säätiön rahoitusmalli ja yhteistyöhankkeiden valintaperiaatteet. Kaudella 2025–2030 ei yleistä vuosittaista apurahahakua; mahdolliset erillishaut tarkistetaan lähteestä. Mukana erillinen koulujen ja varhaiskasvatuksen luontoretkiavustus, hakuohjeet sekä vuoden 2026 hakukierros.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "tahsaatio.fi",
+      "www.partio.fi"
+    ],
+    "selector": "main, article, #content",
+    "funder": "Tiina ja Antti Herlinin säätiö",
+    "record_kind": "funding_scheme",
+    "geographic_scope": "finland",
+    "pages": [
+      {
+        "url": "https://tahsaatio.fi/saatio/tietoa-meista/",
+        "title": "Tiina ja Antti Herlinin säätiö – hankekumppanuudet ja rahoitusmalli"
+      },
+      {
+        "url": "https://www.partio.fi/nyt/luontoretkiavustus/",
+        "title": "TAH-säätiön ja kumppanisäätiöiden luontoretkiavustus"
+      },
+      {
+        "url": "https://tahsaatio.fi/2026/02/18/avustushaku-lasten-ja-nuorten-luontoretkia-varten-on-auki-18-2-11-3-2026/",
+        "title": "Luontoretkiavustus 2026 – TAH-säätiö ja kumppanisäätiöt",
+        "record_kind": "call",
+        "date_selector": "h1",
+        "date_is_period": true
+      }
+    ],
+    "watch_catalogue": true,
+    "eligibility_note": "Yleistä vuosittaista apurahahakua ei oleteta. Luontoretkiavustuksella on erilliset koululuokkia ja varhaiskasvatusta koskevat hakuehdot."
+  },
+  {
+    "id": "herlin-riikka",
+    "name": "Riikka Herlinin säätiö",
+    "url": "https://rhsaatio.fi/toiminta/apurahat/",
+    "adapter": "funding_pages",
+    "category": "Säätiöt",
+    "coverage": "Projektituen kaikki hakijasivun ehdot ja vuosittaiset muutokset. Nykyisen 2027-projektituen hakuaika ja kelpoisuuskriteerit säilyvät koko tekstissä. Tietue on pysyvä rahoitusmuoto, ei automaattisesti avoimeksi merkitty vuosikierros. Myös julkaistu 2027-hakukierros omana tietueenaan, määräaika suoraan hakuilmoituksesta.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "rhsaatio.fi"
+    ],
+    "selector": "body",
+    "funder": "Riikka Herlinin säätiö",
+    "record_kind": "funding_scheme",
+    "geographic_scope": "finland",
+    "pages": [
+      {
+        "url": "https://rhsaatio.fi/toiminta/apurahat/",
+        "title": "Riikka Herlinin säätiö – kehitysvamma-alan projektituki"
+      },
+      {
+        "url": "https://rhsaatio.fi/apurahahaku-vuodelle-2027/",
+        "title": "Riikka Herlinin säätiön projektituki vuodelle 2027",
+        "record_kind": "call",
+        "date_selector": "p:-soup-contains(\"Hakuaika on\")",
+        "date_is_period": true
+      }
+    ],
+    "watch_catalogue": true
+  },
+  {
+    "id": "innovation-fund-pda",
+    "name": "EIB / Innovation Fund – PDA",
+    "url": "https://www.eib.org/en/products/mandates-partnerships/innovation-fund/index.htm",
+    "adapter": "funding_pages",
+    "category": "Investointien valmistelu",
+    "coverage": "Innovation Fundin Project Development Assistance -valmistelutuki, hakutapa ja ohjeet. Varsinaiset Innovation Fundin hankehaut sisältyvät EU Funding & Tenders -keruuseen; valmistelutuki on erillinen rahoitusmuoto.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "www.eib.org"
+    ],
+    "selector": "main, article, #content",
+    "funder": "EIB / Innovation Fund – PDA",
+    "record_kind": "funding_scheme",
+    "geographic_scope": "eu",
+    "pages": [
+      {
+        "url": "https://www.eib.org/en/products/mandates-partnerships/innovation-fund/index.htm",
+        "title": "Innovation Fund – Project Development Assistance (EIB)"
+      }
+    ],
+    "language": "en",
+    "instrument": "technical_assistance",
+    "watch_catalogue": true
+  },
+  {
+    "id": "business-finland-calls",
+    "name": "Business Finland – veturi- ja Co-Innovation-hakukierrokset",
+    "url": "https://www.businessfinland.fi/palvelut/rahoitus/rahoituspalvelut/veturiyritysten-ja-ekosysteemien-rahoitus/",
+    "adapter": "funding_pages",
+    "category": "Kansallinen",
+    "coverage": "Veturiyritysten haastekilpailun 2026 ja veturiekosysteemien jatkuvan Co-Innovation-kumppanuusrahoitushaun koko julkaistu sisältö. Tilat ja ajat luetaan sivulta; muita hakukierroksia seurataan rahoitusmuotosivun uusista linkeistä.",
+    "owner": "Rahoitusrekisterin ylläpitäjä (nimettävä)",
+    "enabled": true,
+    "allowed_hosts": [
+      "www.businessfinland.fi",
+      "www.businessfinland.com",
+      "businessfinland.fi"
+    ],
+    "selector": "main, article, #content",
+    "funder": "Business Finland",
+    "record_kind": "call",
+    "geographic_scope": "finland",
+    "card_selector": "a.break-inside-avoid",
+    "link_is_card": true,
+    "title_selector": ".headline-h3",
+    "fetch_details": true,
+    "instrument": "other",
+    "watch_catalogue": true,
+    "pages": [
+      {
+        "url": "https://www.businessfinland.fi/palvelut/rahoitus/haut/2026/veturiyritysten-haastekilpailu-2026/",
+        "date_selector": "p:-soup-contains(\"Ensimmäisen vaiheen määräaika\")",
+        "open_date_selector": ".notification-block p",
+        "status_selector": ".bg-utility-success-icon-border span",
+        "deadline_model": "two-stage"
+      },
+      {
+        "url": "https://www.businessfinland.fi/palvelut/rahoitus/haut/2024/veturiyritysten-kumppanuusrahoitushaku-co-innovation/",
+        "rolling_selector": "p:-soup-contains(\"Jatkuva haku yrityksille\")",
+        "status_selector": ".bg-utility-success-icon-border span"
+      }
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+// Azure Monitor scheduled query alert: no completed collector output in the last 36 hours.
+// Evaluation: every hour, lookback 2 days; alert when MissingRuns > 0.
+// Set the configured collector job name before creating the alert and attach the city's action group.
+ContainerAppConsoleLogs_CL
+| where TimeGenerated > ago(36h)
+| where ContainerGroupName_s startswith "trefunding-collect-"
+| where Log_s has '"status":"success"'
+| summarize SuccessfulSources = dcount(tostring(parse_json(Log_s).source))
+| extend MissingRuns = iff(SuccessfulSources == 0, 1, 0)
+
+// Separate alert for failed or incomplete source runs (one hit is enough).
+ContainerAppConsoleLogs_CL
+| where TimeGenerated > ago(2h)
+| where ContainerGroupName_s startswith "trefunding-collect-"
+| where Log_s has '"status":"failed"' or Log_s has '"status":"partial"'
+| project TimeGenerated, Log_s

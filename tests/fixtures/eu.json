@@ -1,0 +1,103 @@
+{
+  "apiVersion": "2.154",
+  "reference": "45740695HORIZONInnovationActions1673308800000",
+  "url": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-MISS-2023-CLIMA-01-01.json",
+  "contentType": "text/plain",
+  "language": "en",
+  "databaseLabel": "",
+  "summary": "Testing and demonstrating transformative solutions increasing climate resilience of the agriculture and/or forestry sector.",
+  "weight": 3.0000157,
+  "groupById": "1",
+  "content": "Testing and demonstrating transformative solutions increasing climate resilience of the agriculture and/or forestry sector.",
+  "accessRestriction": false,
+  "checksum": "2EBCD33B0DF6CD0A199BEE85F5B43C06C9D76F78974CC0D83D175B348DF1578E",
+  "metadata": {
+    "sortStatus": [
+      "1"
+    ],
+    "language": [
+      "en"
+    ],
+    "type": [
+      "1"
+    ],
+    "title": [
+      "Testing and demonstrating transformative solutions increasing climate resilience of the agriculture and/or forestry sector."
+    ],
+    "focusArea": [],
+    "cftId": [
+      "0"
+    ],
+    "typeOfMGAs": [
+      "43027846"
+    ],
+    "callIdentifier": [
+      "HORIZON-MISS-2023-CLIMA-01"
+    ],
+    "callccm2Id": [
+      "45740753"
+    ],
+    "DATASOURCE": [
+      "SEDIA_PRD_CENTRICITY"
+    ],
+    "frameworkProgramme": [
+      "43108390"
+    ],
+    "identifier": [
+      "HORIZON-MISS-2023-CLIMA-01-01"
+    ],
+    "programmeDivision": [
+      "43120830",
+      "43121578",
+      "43121757",
+      "43121563",
+      "43120821",
+      "43121707",
+      "43466294",
+      "43108541",
+      "43121702",
+      "43121717"
+    ],
+    "crossCuttingPriorities": [
+      "SocInnov",
+      "EoscAndFairData"
+    ],
+    "programmePeriod": [
+      "2021 - 2027"
+    ],
+    "deadlineDate": [
+      "2023-09-20T17:00:00.000+0000"
+    ],
+    "typesOfAction": [
+      "HORIZON Innovation Actions"
+    ],
+    "corporate-search-version": [
+      "102"
+    ],
+    "url": [
+      "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-MISS-2023-CLIMA-01-01.json"
+    ],
+    "mission": [
+      "44798830"
+    ],
+    "datasource": [
+      "SEDIA_PRD_CENTRICITY"
+    ],
+    "missionGroup": [
+      "45355166"
+    ],
+    "startDate": [
+      "2023-01-10T00:00:00.000+0000"
+    ],
+    "deadlineModel": [
+      "single-stage"
+    ],
+    "status": [
+      "31094502"
+    ]
+  },
+  "enrichedMetadata": {},
+  "children": [],
+  "highlightedFragments": [],
+  "citation": "Testing and demonstrating transformative solutions increasing climate resilience of the agriculture and/or forestry sector.. Available at: https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-MISS-2023-CLIMA-01-01.json"
+}

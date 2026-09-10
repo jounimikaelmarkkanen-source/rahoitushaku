@@ -1,0 +1,13 @@
+.git
+.venv
+.runtime
+node_modules
+data
+tmp
+outputs
+dist
+*.zip
+.env*
+__pycache__
+.pytest_cache
+.ruff_cache

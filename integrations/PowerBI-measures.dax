@@ -1,0 +1,10 @@
+// Add to the Funding table. Theme filters use the separate Tags bridge table.
+Ilmoituksia = DISTINCTCOUNT(Funding[id])
+Tarkistettavia = CALCULATE([Ilmoituksia], Funding[needs_review] = 1)
+Määräaika 30 päivän sisällä =
+    CALCULATE(
+        [Ilmoituksia],
+        Funding[deadline_on] >= TODAY(),
+        Funding[deadline_on] <= TODAY() + 30
+    )
+// Do not sum programme/call budgets as money available to Tampere.

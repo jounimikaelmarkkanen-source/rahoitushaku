@@ -1,0 +1,1013 @@
+{
+  "row": {
+    "id": "f3d9fe5a-6b79-4a97-afb7-f9786a9a4097",
+    "tila": "paattynyt",
+    "hakuaika": {
+      "alku": "2022-04-01",
+      "loppu": "2022-05-10"
+    },
+    "otsikko": "Valtakunnallinen Innovaatio- ja osaamisverkostot (EAKR) valmisteluhankkeet",
+    "rahasto": "EAKR",
+    "eakrTyyppi": "TYT",
+    "viranomainen": "6207",
+    "alue": "VALTAKUNNALLINEN",
+    "hakutunnus": "ESAELY-002",
+    "maakunnat": []
+  },
+  "codes": {
+    "viranomainen": {
+      "2601": {
+        "koodi": "2601",
+        "fi": "Uudenmaan liitto",
+        "en": "Helsinki-Uusimaa Regional Council",
+        "sv": "Nylands förbund",
+        "lyhenne_fi": "Uudenmaan liitto",
+        "lyhenne_sv": "Nylands förbund",
+        "rahasto": [
+          "EAKR",
+          "JTF"
+        ],
+        "toimintalinja": [
+          "TL_2",
+          "TL_7",
+          "TL_1"
+        ],
+        "maakunta": [
+          "valtakunnallinen/S",
+          "ylimaakunnallinen/KA",
+          "07",
+          "ylimaakunnallinen/S",
+          "05",
+          "02",
+          "valtakunnallinen/KA",
+          "01",
+          "08",
+          "ylimaakunnallinen"
+        ],
+        "hakuilmoituskoodi": "UUMLII",
+        "diaari": "UML",
+        "ytunnus": "0201296-1",
+        "tyyppi": "liitto",
+        "esitysjarjestys": 2100,
+        "kasittelevaLiitto": true,
+        "maakuntaliitto": true,
+        "lahiosoite": "Esterinportti 2 B",
+        "postinumero": "00240",
+        "postitoimipaikka": "HELSINKI",
+        "viranomaisenSahkoposti": "toimisto@uudenmaanliitto.fi"
+      },
+      "2602": {
+        "koodi": "2602",
+        "fi": "Varsinais-Suomen liitto",
+        "en": "Regional Council of Southwest Finland",
+        "sv": "Egentliga Finlands förbund",
+        "lyhenne_fi": "Varsinais-Suomen liitto",
+        "lyhenne_sv": "Egentliga Finlands förbund",
+        "rahasto": [],
+        "toimintalinja": [],
+        "maakunta": [],
+        "hakuilmoituskoodi": "VSL",
+        "diaari": "VSL",
+        "ytunnus": "0922305-9",
+        "tyyppi": "liitto",
+        "esitysjarjestys": 2200,
+        "kasittelevaLiitto": true,
+        "maakuntaliitto": true,
+        "lahiosoite": "Linnankatu 52 B",
+        "postinumero": "20100",
+        "postitoimipaikka": "TURKU",
+        "viranomaisenSahkoposti": "kirjaamo@varsinais-suomi.fi"
+      },
+      "2604": {
+        "koodi": "2604",
+        "fi": "Satakuntaliitto",
+        "en": "Regional Council of Satakunta",
+        "sv": "Satakuntaförbundet",
+        "lyhenne_fi": "Satakuntaliitto",
+        "lyhenne_sv": "Satakuntaförbundet",
+        "rahasto": [
+          "EAKR",
+          "JTF"
+        ],
+        "toimintalinja": [
+          "TL_2",
+          "TL_7",
+          "TL_1"
+        ],
+        "maakunta": [
+          "06",
+          "04",
+          "ylimaakunnallinen"
+        ],
+        "hakuilmoituskoodi": "SATLII",
+        "diaari": "SATLI",
+        "ytunnus": "0830322-5",
+        "tyyppi": "liitto",
+        "esitysjarjestys": 2000,
+        "maakuntaliitto": true,
+        "lahiosoite": "Pohjoisranta 11 D",
+        "postinumero": "28101",
+        "postitoimipaikka": "PORI",
+        "viranomaisenSahkoposti": "kirjaamo@satakunta.fi"
+      },
+      "2605": {
+        "koodi": "2605",
+        "fi": "Hämeen liitto",
+        "en": "Regional Council of Häme",
+        "sv": "Tavastlands förbund",
+        "lyhenne_fi": "Hämeen liitto",
+        "lyhenne_sv": "Tavastlands förbund",
+        "rahasto": [],
+        "toimintalinja": [],
+        "maakunta": [],
+        "hakuilmoituskoodi": "HL",
+        "diaari": "HL",
+        "ytunnus": "0826048-0",
+        "tyyppi": "liitto",
+        "esitysjarjestys": 800,
+        "kasittelevaLiitto": true,
+        "maakuntaliitto": true,
+        "lahiosoite": "Niittykatu 5",
+        "postinumero": "13100",
+        "postitoimipaikka": "HÄMEENLINNA",
+        "viranomaisenSahkoposti": "hameenliitto@hame.fi"
+      },
+      "2606": {
+        "koodi": "2606",
+        "fi": "Pirkanmaan liitto",
+        "en": "Council of Tampere Region",
+        "sv": "Birkalands förbund",
+        "lyhenne_fi": "Pirkanmaan liitto",
+        "lyhenne_sv": "Birkalands förbund",
+        "rahasto": [
+          "EAKR",
+          "JTF"
+        ],
+        "toimintalinja": [
+          "TL_2",
+          "TL_7",
+          "TL_1"
+        ],
+        "maakunta": [
+          "06",
+          "valtakunnallinen/S",
+          "ylimaakunnallinen/KA",
+          "ylimaakunnallinen/S",
+          "valtakunnallinen/KA",
+          "ylimaakunnallinen"
+        ],
+        "hakuilmoituskoodi": "PIRLII",
+        "diaari": "PL",
+        "ytunnus": "0828308-4",
+        "tyyppi": "liitto",
+        "esitysjarjestys": 1400,
+        "maakuntaliitto": true,
+        "lahiosoite": "Kalevantie 2 C",
+        "postinumero": "33100",
+        "postitoimipaikka": "TAMPERE",
+        "viranomaisenSahkoposti": "pirkanmaan.liitto@pirkanmaa.fi"
+      },
+      "2607": {
+        "koodi": "2607",
+        "fi": "Päijät-Hämeen liitto",
+        "en": "Regional Council of Päijät-Häme",
+        "sv": "Päijät-Häme förbund",
+        "lyhenne_fi": "Päijät-Hämeen liitto",
+        "lyhenne_sv": "Päijät-Häme förbund",
+        "rahasto": [],
+        "toimintalinja": [],
+        "maakunta": [],
+        "hakuilmoituskoodi": "PHAME",
+        "diaari": "PHAME",
+        "ytunnus": "0215610-5",
+        "tyyppi": "liitto",
+        "esitysjarjestys": 1900,
+        "kasittelevaLiitto": true,
+        "maakuntaliitto": true,
+        "lahiosoite": "Hämeenkatu 9 A",
+        "postinumero": "15111",
+        "postitoimipaikka": "LAHTI",
+        "viranomaisenSahkoposti": "toimisto@paijat-hame.fi"
+      },
+      "2608": {
+        "koodi": "2608",
+        "fi": "Kymenlaakson liitto",
+        "en": "Regional Council of Kymenlaakso",
+        "sv": "Kymmenedalens förbund",
+        "lyhenne_fi": "Kymenlaakson liitto",
+        "lyhenne_sv": "Kymmenedalens förbund",
+        "rahasto": [],
+        "toimintalinja": [],
+        "maakunta": [],
+        "hakuilmoituskoodi": "KYMLII",
+        "diaari": "KL",
+        "ytunnus": "0206714-5",
+        "tyyppi": "liitto",
+        "esitysjarjestys": 1200,
+        "kasittelevaLiitto": true,
+        "maakuntaliitto": true,
+        "lahiosoite": "Hovioikeudenkatu 6",
+        "postinumero": "45100",
+        "postitoimipaikka": "KOUVOLA",
+        "viranomaisenSahkoposti": "virasto@kymenlaakso.fi"
+      },
+      "2609": {
+        "koodi": "2609",
+        "fi": "Etelä-Karjalan liitto",
+        "en": "Regional Council of South Karelia",
+        "sv": "Sydkarelens förbund",
+        "lyhenne_fi": "Etelä-Karjalan liitto",
+        "lyhenne_sv": "Sydkarelens förbund",
+        "rahasto": [
+          "EAKR",
+          "JTF"
+        ],
+        "toimintalinja": [
+          "TL_2",
+          "TL_7",
+          "TL_1"
+        ],
+        "maakunta": [
+          "09",
+          "ylimaakunnallinen"
+        ],
+        "hakuilmoituskoodi": "EKALII",
+        "diaari": "EKARJALA",
+        "ytunnus": "0869462-5",
+        "tyyppi": "liitto",
+        "esitysjarjestys": 500,
+        "maakuntaliitto": true,
+        "lahiosoite": "Kauppakatu 40 D",
+        "postinumero": "53100",
+        "postitoimipaikka": "LAPPEENRANTA",
+        "viranomaisenSahkoposti": "kirjaamo@ekarjala.fi"
+      },
+      "2610": {
+        "koodi": "2610",
+        "fi": "Etelä-Savon maakuntaliitto",
+        "en": "Regional Council of South Savo",
+        "sv": "Södra Savolax landskapsförbund",
+        "lyhenne_fi": "Etelä-Savon maakuntaliitto",
+        "lyhenne_sv": "Södra Savolax landskapsförbund",
+        "rahasto": [
+          "EAKR",
+          "JTF"
+        ],
+        "toimintalinja": [
+          "TL_3",
+          "TL_2",
+          "TL_7",
+          "TL_1"
+        ],
+        "maakunta": [
+          "ylimaakunnallinen",
+          "10"
+        ],
+        "hakuilmoituskoodi": "ESALII",
+        "diaari": "ESAVO",
+        "ytunnus": "0215839-7",
+        "tyyppi": "liitto",
+        "esitysjarjestys": 700,
+        "maakuntaliitto": true,
+        "lahiosoite": "Mikonkatu 5",
+        "postinumero": "50100",
+        "postitoimipaikka": "MIKKELI",
+        "viranomaisenSahkoposti": "kirjaamo@esavo.fi"
+      },
+      "2611": {
+        "koodi": "2611",
+        "fi": "Pohjois-Savon liitto",
+        "en": "Regional Council of North Savo",
+        "sv": "Norra Savolax förbund",
+        "lyhenne_fi": "Pohjois-Savon liitto",
+        "lyhenne_sv": "Norra Savolax förbund",
+        "rahasto": [
+          "EAKR",
+          "JTF"
+        ],
+        "toimintalinja": [
+          "TL_3",
+          "TL_2",
+          "TL_7",
+          "TL_1"
+        ],
+        "maakunta": [
+          "11",
+          "ylimaakunnallinen"
+        ],
+        "hakuilmoituskoodi": "POSLII",
+        "diaari": "PSL",
+        "ytunnus": "0827616-7",
+        "tyyppi": "liitto",
+        "esitysjarjestys": 1800,
+        "maakuntaliitto": true,
+        "lahiosoite": "Sepänkatu 1",
+        "postinumero": "70100",
+        "postitoimipaikka": "KUOPIO",
+        "viranomaisenSahkoposti": "kirjaamo@pohjois-savo.fi"
+      },
+      "2612": {
+        "koodi": "2612",
+        "fi": "Pohjois-Karjalan maakuntaliitto",
+        "en": "Regional Council of North Karelia",
+        "sv": "Norra Karelens landskapsförbund",
+        "lyhenne_fi": "Pohjois-Karjalan maakuntaliitto",
+        "lyhenne_sv": "Norra Karelens landskapsförbund",
+        "rahasto": [
+          "EAKR",
+          "JTF"
+        ],
+        "toimintalinja": [
+          "TL_3",
+          "TL_2",
+          "TL_7",
+          "TL_1"
+        ],
+        "maakunta": [
+          "12",
+          "ylimaakunnallinen"
+        ],
+        "hakuilmoituskoodi": "POKLII",
+        "diaari": "PKARJALA",
+        "ytunnus": "0927140-5",
+        "tyyppi": "liitto",
+        "esitysjarjestys": 1600,
+        "maakuntaliitto": true,
+        "lahiosoite": "Pielisjoen linna, Siltakatu 2",
+        "postinumero": "80100",
+        "postitoimipaikka": "JOENSUU",
+        "viranomaisenSahkoposti": "kirjaamo@pohjois-karjala.fi"
+      },
+      "2613": {
+        "koodi": "2613",
+        "fi": "Keski-Suomen liitto",
+        "en": "Regional Council of Central Finland",
+        "sv": "Mellersta Finlands förbund",
+        "lyhenne_fi": "Keski-Suomen liitto",
+        "lyhenne_sv": "Mellersta Finlands förbund",
+        "rahasto": [
+          "EAKR",
+          "JTF"
+        ],
+        "toimintalinja": [
+          "TL_2",
+          "TL_7",
+          "TL_1"
+        ],
+        "maakunta": [
+          "13",
+          "ylimaakunnallinen"
+        ],
+        "hakuilmoituskoodi": "KESLII",
+        "diaari": "KSL",
+        "ytunnus": "0830155-3",
+        "tyyppi": "liitto",
+        "esitysjarjestys": 1100,
+        "maakuntaliitto": true,
+        "lahiosoite": "Lutakonaukio 7",
+        "postinumero": "40100",
+        "postitoimipaikka": "JYVÄSKYLÄ",
+        "viranomaisenSahkoposti": "kirjaamo@keskisuomi.fi"
+      },
+      "2614": {
+        "koodi": "2614",
+        "fi": "Etelä-Pohjanmaan liitto",
+        "en": "Regional Council of South Ostrobothnia",
+        "sv": "Södra Österbottens förbund",
+        "lyhenne_fi": "Etelä-Pohjanmaan liitto",
+        "lyhenne_sv": "Södra Österbottens förbund",
+        "rahasto": [
+          "EAKR",
+          "JTF"
+        ],
+        "toimintalinja": [
+          "TL_2",
+          "TL_7",
+          "TL_1"
+        ],
+        "maakunta": [
+          "14",
+          "06",
+          "ylimaakunnallinen"
+        ],
+        "hakuilmoituskoodi": "EPOLII",
+        "diaari": "EPL",
+        "ytunnus": "0955281-3",
+        "tyyppi": "liitto",
+        "esitysjarjestys": 600,
+        "maakuntaliitto": true,
+        "lahiosoite": "Kampusranta 9 C",
+        "postinumero": "60320",
+        "postitoimipaikka": "SEINÄJOKI",
+        "viranomaisenSahkoposti": "kirjaamo@etela-pohjanmaa.fi"
+      },
+      "2615": {
+        "koodi": "2615",
+        "fi": "Pohjanmaan liitto",
+        "en": "Regional Council of Ostrobothnia",
+        "sv": "Österbottens förbund",
+        "lyhenne_fi": "Pohjanmaan liitto",
+        "lyhenne_sv": "Österbottens förbund",
+        "rahasto": [
+          "EAKR",
+          "JTF"
+        ],
+        "toimintalinja": [
+          "TL_2",
+          "TL_7",
+          "TL_1"
+        ],
+        "maakunta": [
+          "15",
+          "ylimaakunnallinen"
+        ],
+        "hakuilmoituskoodi": "POHLII",
+        "diaari": "ÖFPL",
+        "ytunnus": "0970063-6",
+        "tyyppi": "liitto",
+        "esitysjarjestys": 1500,
+        "maakuntaliitto": true,
+        "lahiosoite": "Hietasaarenkatu 6 B",
+        "postinumero": "65101",
+        "postitoimipaikka": "VAASA",
+        "viranomaisenSahkoposti": "kirjaamo@obotnia.fi"
+      },
+      "2616": {
+        "koodi": "2616",
+        "fi": "Keski-Pohjanmaan liitto",
+        "en": "Regional Council of Central Ostrobothnia",
+        "sv": "Mellersta Österbottens förbund",
+        "lyhenne_fi": "Keski-Pohjanmaan liitto",
+        "lyhenne_sv": "Mellersta Österbottens förbund",
+        "rahasto": [
+          "EAKR",
+          "JTF"
+        ],
+        "toimintalinja": [
+          "TL_3",
+          "TL_2",
+          "TL_7",
+          "TL_1"
+        ],
+        "maakunta": [
+          "ylimaakunnallinen",
+          "16"
+        ],
+        "hakuilmoituskoodi": "KEPLII",
+        "diaari": "KPLIITTO",
+        "ytunnus": "0959806-1",
+        "tyyppi": "liitto",
+        "esitysjarjestys": 1000,
+        "maakuntaliitto": true,
+        "lahiosoite": "Rantakatu 14",
+        "postinumero": "67100",
+        "postitoimipaikka": "KOKKOLA",
+        "viranomaisenSahkoposti": "kirjaamo@keski-pohjanmaa.fi"
+      },
+      "2617": {
+        "koodi": "2617",
+        "fi": "Pohjois-Pohjanmaan liitto",
+        "en": "Council of Oulu Region",
+        "sv": "Norra Österbottens förbund",
+        "lyhenne_fi": "Pohjois-Pohjanmaan liitto",
+        "lyhenne_sv": "Norra Österbottens förbund",
+        "rahasto": [
+          "EAKR",
+          "JTF"
+        ],
+        "toimintalinja": [
+          "TL_3",
+          "TL_2",
+          "TL_7",
+          "TL_1"
+        ],
+        "maakunta": [
+          "17",
+          "ylimaakunnallinen"
+        ],
+        "hakuilmoituskoodi": "POPLII",
+        "diaari": "PPL",
+        "ytunnus": "0922484-4",
+        "tyyppi": "liitto",
+        "esitysjarjestys": 1700,
+        "maakuntaliitto": true,
+        "lahiosoite": "Poratie 5 A",
+        "postinumero": "90140",
+        "postitoimipaikka": "OULU",
+        "viranomaisenSahkoposti": "kirjaamo@pohjois-pohjanmaa.fi"
+      },
+      "2618": {
+        "koodi": "2618",
+        "fi": "Kainuun liitto",
+        "en": "Regional Council of Kainuu",
+        "sv": "Kajanalands förbund",
+        "lyhenne_fi": "Kainuun liitto",
+        "lyhenne_sv": "Kajanalands förbund",
+        "rahasto": [
+          "EAKR",
+          "JTF"
+        ],
+        "toimintalinja": [
+          "TL_3",
+          "TL_2",
+          "TL_7",
+          "TL_1"
+        ],
+        "maakunta": [
+          "18",
+          "ylimaakunnallinen"
+        ],
+        "hakuilmoituskoodi": "KAILII",
+        "diaari": "Kainuu",
+        "ytunnus": "2496992-4",
+        "tyyppi": "liitto",
+        "esitysjarjestys": 900,
+        "maakuntaliitto": true,
+        "lahiosoite": "Kauppakatu 1",
+        "postinumero": "87100",
+        "postitoimipaikka": "KAJAANI",
+        "viranomaisenSahkoposti": "kirjaamo@kainuunliitto.fi"
+      },
+      "2619": {
+        "koodi": "2619",
+        "fi": "Lapin liitto",
+        "en": "Regional Council of Lapland",
+        "sv": "Lapplands förbund",
+        "lyhenne_fi": "Lapin liitto",
+        "lyhenne_sv": "Lapplands förbund",
+        "rahasto": [
+          "EAKR",
+          "JTF"
+        ],
+        "toimintalinja": [
+          "TL_3",
+          "TL_2",
+          "TL_7",
+          "TL_1"
+        ],
+        "maakunta": [
+          "19",
+          "ylimaakunnallinen"
+        ],
+        "hakuilmoituskoodi": "LAPLII",
+        "diaari": "LL",
+        "ytunnus": "0937073-7",
+        "tyyppi": "liitto",
+        "esitysjarjestys": 1300,
+        "maakuntaliitto": true,
+        "lahiosoite": "Hallituskatu 20 B",
+        "postinumero": "96100",
+        "postitoimipaikka": "ROVANIEMI",
+        "viranomaisenSahkoposti": "info@lapinliitto.fi"
+      },
+      "2800": {
+        "koodi": "2800",
+        "fi": "Valtiovarain controller -toiminto",
+        "en": "Valtiovarain controller -toiminto",
+        "sv": "Finanscontrollerfunktionen",
+        "lyhenne_fi": "Valtiovarain controller -toiminto",
+        "lyhenne_sv": "Finanscontrollerfunktionen",
+        "rahasto": [],
+        "toimintalinja": [],
+        "maakunta": [],
+        "hakuilmoituskoodi": "?",
+        "diaari": "?",
+        "ytunnus": "0245439-9",
+        "esitysjarjestys": 2500,
+        "lahiosoite": "PL 28",
+        "postinumero": "00023",
+        "postitoimipaikka": "HELSINKI",
+        "viranomaisenSahkoposti": "kirjaamo@vm.fi"
+      },
+      "6204": {
+        "koodi": "6204",
+        "fi": "Kaakkois-Suomen elinvoimakeskus",
+        "en": "Economic Development Centre of Southeastern Finland",
+        "sv": "Livskraftscentralen i Sydöstra Finland",
+        "lyhenne_fi": "Kaakkois-Suomen elinvoimakeskus",
+        "lyhenne_sv": "Livskraftscentralen i Sydöstra Finland",
+        "rahasto": [
+          "ESR+",
+          "EAKR",
+          "JTF"
+        ],
+        "toimintalinja": [
+          "TL_5",
+          "TL_2",
+          "TL_7",
+          "TL_4",
+          "TL_8",
+          "TL_1"
+        ],
+        "maakunta": [
+          "09",
+          "valtakunnallinen/S",
+          "ylimaakunnallinen/KA",
+          "07",
+          "ylimaakunnallinen/S",
+          "valtakunnallinen",
+          "05",
+          "valtakunnallinen/KA",
+          "01",
+          "08",
+          "ylimaakunnallinen"
+        ],
+        "hakuilmoituskoodi": "KASEVK",
+        "diaari": "KASEVK",
+        "ely": true,
+        "ytunnus": "2296962-1",
+        "virastotunnus": "380002",
+        "tyyppi": "ely",
+        "esitysjarjestys": 200,
+        "lahiosoite": "Kauppamiehenkatu 4",
+        "postinumero": "45100",
+        "postitoimipaikka": "KOUVOLA",
+        "viranomaisenSahkoposti": "kirjaamo.kaakkois-suomi@elinvoimakeskus.fi"
+      },
+      "6207": {
+        "koodi": "6207",
+        "fi": "Itä-Suomen elinvoimakeskus",
+        "en": "Economic Development Centre of Eastern Finland",
+        "sv": "Livskraftscentralen i Östra Finland",
+        "lyhenne_fi": "Itä-Suomen elinvoimakeskus",
+        "lyhenne_sv": "Livskraftscentralen i Östra Finland",
+        "rahasto": [
+          "ESR+",
+          "EAKR",
+          "JTF"
+        ],
+        "toimintalinja": [
+          "TL_5",
+          "TL_3",
+          "TL_2",
+          "TL_7",
+          "TL_4",
+          "TL_8",
+          "TL_1"
+        ],
+        "maakunta": [
+          "valtakunnallinen/S",
+          "12",
+          "11",
+          "valtakunnallinen/KA",
+          "ylimaakunnallinen",
+          "10"
+        ],
+        "hakuilmoituskoodi": "ITÄEVK",
+        "diaari": "ITÄEVK",
+        "ely": true,
+        "ytunnus": "2296962-1",
+        "virastotunnus": "380014",
+        "tyyppi": "ely",
+        "esitysjarjestys": 100,
+        "lahiosoite": "Kallanranta 11",
+        "postinumero": "70100",
+        "postitoimipaikka": "KUOPIO",
+        "viranomaisenSahkoposti": "kirjaamo.ita-suomi@elinvoimakeskus.fi"
+      },
+      "6310": {
+        "koodi": "6310",
+        "fi": "Keski-Suomen elinvoimakeskus",
+        "en": "Economic Development Centre of Central Finland",
+        "sv": "Livskraftscentralen i Mellersta Finland",
+        "lyhenne_fi": "Keski-Suomen elinvoimakeskus",
+        "lyhenne_sv": "Livskraftscentralen i Mellersta Finland",
+        "rahasto": [
+          "ESR+",
+          "EAKR",
+          "JTF"
+        ],
+        "toimintalinja": [
+          "TL_5",
+          "TL_3",
+          "TL_2",
+          "TL_7",
+          "TL_4",
+          "TL_8",
+          "TL_1"
+        ],
+        "maakunta": [
+          "14",
+          "06",
+          "valtakunnallinen/S",
+          "15",
+          "ylimaakunnallinen/KA",
+          "13",
+          "ylimaakunnallinen/S",
+          "05",
+          "02",
+          "04",
+          "valtakunnallinen/KA",
+          "ylimaakunnallinen",
+          "16"
+        ],
+        "hakuilmoituskoodi": "KESEVK",
+        "diaari": "KESEVK",
+        "ely": true,
+        "ytunnus": "2296962-1",
+        "virastotunnus": "380006",
+        "tyyppi": "ely",
+        "esitysjarjestys": 300,
+        "lahiosoite": "Vapaudenkatu 58",
+        "postinumero": "40100",
+        "postitoimipaikka": "JYVÄSKYLÄ",
+        "viranomaisenSahkoposti": "kirjaamo.keski-suomi@elinvoimakeskus.fi"
+      },
+      "6413": {
+        "koodi": "6413",
+        "fi": "Pohjois-Suomen elinvoimakeskus",
+        "en": "Economic Development Centre of Northern Finland",
+        "sv": "Livskraftscentralen i Norra Finland",
+        "lyhenne_fi": "Pohjois-Suomen elinvoimakeskus",
+        "lyhenne_sv": "Livskraftscentralen i Norra Finland",
+        "rahasto": [
+          "ESR+",
+          "EAKR",
+          "JTF"
+        ],
+        "toimintalinja": [
+          "TL_5",
+          "TL_3",
+          "TL_2",
+          "TL_7",
+          "TL_9",
+          "TL_4",
+          "TL_8",
+          "TL_1"
+        ],
+        "maakunta": [
+          "valtakunnallinen/S",
+          "19",
+          "17",
+          "18",
+          "valtakunnallinen/KA",
+          "ylimaakunnallinen"
+        ],
+        "hakuilmoituskoodi": "PSUEVK",
+        "diaari": "PSUEVK",
+        "ely": true,
+        "ytunnus": "2296962-1",
+        "virastotunnus": "380009",
+        "tyyppi": "ely",
+        "esitysjarjestys": 400,
+        "lahiosoite": "Veteraanikatu 1",
+        "postinumero": "90130",
+        "postitoimipaikka": "OULU",
+        "viranomaisenSahkoposti": "kirjaamo.pohjois-suomi@elinvoimakeskus.fi"
+      },
+      "7000": {
+        "koodi": "7000",
+        "fi": "Työ- ja elinkeinoministeriö",
+        "en": "Ministry of Employment and the Economy",
+        "sv": "Arbets- och näringsministeriet",
+        "lyhenne_fi": "Työ- ja elinkeinoministeriö",
+        "lyhenne_sv": "Arbets- och näringsministeriet",
+        "rahasto": [
+          "EAKR"
+        ],
+        "toimintalinja": [
+          "TL_1"
+        ],
+        "maakunta": [],
+        "hakuilmoituskoodi": "TEM",
+        "diaari": "TEM",
+        "tem": true,
+        "ytunnus": "2160307-0",
+        "tyyppi": "tem",
+        "esitysjarjestys": 2400,
+        "lahiosoite": "Aleksanterinkatu 4",
+        "postinumero": "00170",
+        "postitoimipaikka": "HELSINKI",
+        "viranomaisenSahkoposti": "kirjaamo.tem@gov.fi"
+      },
+      "9998": {
+        "koodi": "9998",
+        "fi": "Ruokavirasto",
+        "en": "Finnish Food Authority",
+        "sv": "Livsmedelsverket",
+        "lyhenne_fi": "Ruokavirasto",
+        "lyhenne_sv": "Livsmedelsverket",
+        "rahasto": [
+          "ESR+"
+        ],
+        "toimintalinja": [
+          "TL_6"
+        ],
+        "maakunta": [
+          "valtakunnallinen/S",
+          "ylimaakunnallinen/KA",
+          "ylimaakunnallinen/S",
+          "valtakunnallinen/KA",
+          "ylimaakunnallinen"
+        ],
+        "hakuilmoituskoodi": "RUOKAV",
+        "diaari": "RUOKA",
+        "ely": true,
+        "ytunnus": "2911686-7",
+        "tyyppi": "ely",
+        "esitysjarjestys": 2300,
+        "lahiosoite": "Alvar Aallon katu 5",
+        "postinumero": "60100",
+        "postitoimipaikka": "SEINÄJOKI",
+        "viranomaisenSahkoposti": "kirjaamo@ruokavirasto.fi"
+      },
+      "9999": {
+        "koodi": "9999",
+        "fi": "Muu",
+        "en": "Other",
+        "sv": "Annan",
+        "lyhenne_fi": "Muu",
+        "lyhenne_sv": "Annan",
+        "rahasto": [],
+        "toimintalinja": [],
+        "maakunta": [],
+        "hakuilmoituskoodi": "?",
+        "diaari": "?",
+        "esitysjarjestys": 2600
+      }
+    },
+    "maakunta": {
+      "10": {
+        "koodi": "10",
+        "fi": "Etelä-Savo",
+        "en": "Southern Savo",
+        "sv": "Södra Savolax",
+        "lyhenne_fi": "Etelä-Savo",
+        "lyhenne_sv": "Södra Savolax"
+      },
+      "11": {
+        "koodi": "11",
+        "fi": "Pohjois-Savo",
+        "en": "Northern Savo",
+        "sv": "Norra Savolax",
+        "lyhenne_fi": "Pohjois-Savo",
+        "lyhenne_sv": "Norra Savolax"
+      },
+      "12": {
+        "koodi": "12",
+        "fi": "Pohjois-Karjala",
+        "en": "North Karelia",
+        "sv": "Norra Karelen",
+        "lyhenne_fi": "Pohjois-Karjala",
+        "lyhenne_sv": "Norra Karelen"
+      },
+      "13": {
+        "koodi": "13",
+        "fi": "Keski-Suomi",
+        "en": "Central Finland",
+        "sv": "Mellersta Finland",
+        "lyhenne_fi": "Keski-Suomi",
+        "lyhenne_sv": "Mellersta Finland"
+      },
+      "14": {
+        "koodi": "14",
+        "fi": "Etelä-Pohjanmaa",
+        "en": "South Ostrobothnia",
+        "sv": "Södra Österbotten",
+        "lyhenne_fi": "Etelä-Pohjanmaa",
+        "lyhenne_sv": "Södra Österbotten"
+      },
+      "15": {
+        "koodi": "15",
+        "fi": "Pohjanmaa",
+        "en": "Ostrobothnia",
+        "sv": "Österbotten",
+        "lyhenne_fi": "Pohjanmaa",
+        "lyhenne_sv": "Österbotten"
+      },
+      "16": {
+        "koodi": "16",
+        "fi": "Keski-Pohjanmaa",
+        "en": "Central Ostrobothnia",
+        "sv": "Mellersta Österbotten",
+        "lyhenne_fi": "Keski-Pohjanmaa",
+        "lyhenne_sv": "Mellersta Österbotten"
+      },
+      "17": {
+        "koodi": "17",
+        "fi": "Pohjois-Pohjanmaa",
+        "en": "Northern Ostrobothnia",
+        "sv": "Norra Österbotten",
+        "lyhenne_fi": "Pohjois-Pohjanmaa",
+        "lyhenne_sv": "Norra Österbotten"
+      },
+      "18": {
+        "koodi": "18",
+        "fi": "Kainuu",
+        "en": "Kainuu",
+        "sv": "Kajanaland",
+        "lyhenne_fi": "Kainuu",
+        "lyhenne_sv": "Kajanaland"
+      },
+      "19": {
+        "koodi": "19",
+        "fi": "Lappi",
+        "en": "Lapland",
+        "sv": "Lappland",
+        "lyhenne_fi": "Lappi",
+        "lyhenne_sv": "Lappland"
+      },
+      "01": {
+        "koodi": "01",
+        "fi": "Uusimaa",
+        "en": "Uusimaa",
+        "sv": "Nyland",
+        "lyhenne_fi": "Uusimaa",
+        "lyhenne_sv": "Nyland"
+      },
+      "02": {
+        "koodi": "02",
+        "fi": "Varsinais-Suomi",
+        "en": "South-West Finland",
+        "sv": "Egentliga Finland",
+        "lyhenne_fi": "Varsinais-Suomi",
+        "lyhenne_sv": "Egentliga Finland"
+      },
+      "04": {
+        "koodi": "04",
+        "fi": "Satakunta",
+        "en": "Satakunta",
+        "sv": "Satakunta",
+        "lyhenne_fi": "Satakunta",
+        "lyhenne_sv": "Satakunta"
+      },
+      "05": {
+        "koodi": "05",
+        "fi": "Kanta-Häme",
+        "en": "Häme",
+        "sv": "Egentliga Tavastland",
+        "lyhenne_fi": "Kanta-Häme",
+        "lyhenne_sv": "Egentliga Tavastland"
+      },
+      "06": {
+        "koodi": "06",
+        "fi": "Pirkanmaa",
+        "en": "Tampere Region",
+        "sv": "Birkaland",
+        "lyhenne_fi": "Pirkanmaa",
+        "lyhenne_sv": "Birkaland"
+      },
+      "07": {
+        "koodi": "07",
+        "fi": "Päijät-Häme",
+        "en": "Päijät-Häme",
+        "sv": "Päijänne-Tavastland",
+        "lyhenne_fi": "Päijät-Häme",
+        "lyhenne_sv": "Päijänne-Tavastland"
+      },
+      "08": {
+        "koodi": "08",
+        "fi": "Kymenlaakso",
+        "en": "Kymenlaakso",
+        "sv": "Kymmenedalen",
+        "lyhenne_fi": "Kymenlaakso",
+        "lyhenne_sv": "Kymmenedalen"
+      },
+      "09": {
+        "koodi": "09",
+        "fi": "Etelä-Karjala",
+        "en": "South Karelia",
+        "sv": "Södra Karelen",
+        "lyhenne_fi": "Etelä-Karjala",
+        "lyhenne_sv": "Södra Karelen"
+      },
+      "valtakunnallinen": {
+        "koodi": "valtakunnallinen",
+        "fi": "Valtakunnallinen",
+        "en": "National",
+        "lyhenne_fi": "Valtakunnallinen"
+      },
+      "valtakunnallinen/KA": {
+        "koodi": "valtakunnallinen/KA",
+        "fi": "Valtakunnallinen/kehittynyt alue",
+        "en": "National/more developed region",
+        "lyhenne_fi": "Valtakunnallinen/kehittynyt alue"
+      },
+      "valtakunnallinen/S": {
+        "koodi": "valtakunnallinen/S",
+        "fi": "Valtakunnallinen/siirtymäalue",
+        "lyhenne_fi": "Valtakunnallinen/siirtymäalue"
+      },
+      "ylimaakunnallinen": {
+        "koodi": "ylimaakunnallinen",
+        "fi": "Ylimaakunnallinen",
+        "en": "Cross-regional",
+        "sv": "Landskapsöverskridande",
+        "lyhenne_fi": "Ylimaakunnallinen",
+        "lyhenne_sv": "Landskapsöverskridande"
+      },
+      "ylimaakunnallinen/KA": {
+        "koodi": "ylimaakunnallinen/KA",
+        "fi": "Ylimaakunnallinen/kehittynyt alue",
+        "en": "Cross-regional/more developed region",
+        "lyhenne_fi": "Ylimaakunnallinen/kehittynyt alue"
+      },
+      "ylimaakunnallinen/S": {
+        "koodi": "ylimaakunnallinen/S",
+        "fi": "Ylimaakunnallinen/siirtymäalue",
+        "en": "Cross-regional/Transition region",
+        "lyhenne_fi": "Ylimaakunnallinen/siirtymäalue"
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+# Disposable SQL integration test; never deploy this image as the application.
+FROM mcr.microsoft.com/mssql/server:2022-latest@sha256:97b448857967be55e005424a660056fe6d51814435804dc07e8f79f028bab5fb
+COPY --from=ghcr.io/astral-sh/uv@sha256:73d2665b478d8fa2de1cf105c6841f8e9cb6b09e568fc7700440c09f8fcd7ac4 /uv /usr/local/bin/uv
+USER root
+WORKDIR /app
+ENV UV_PYTHON_INSTALL_DIR=/opt/funding-test-python UV_CACHE_DIR=/tmp/funding-uv-cache
+COPY pyproject.toml requirements.lock ./
+COPY src ./src
+RUN uv python install 3.12 && uv venv --python 3.12 /app/.venv && \
+    uv pip install --python /app/.venv/bin/python --require-hashes -r requirements.lock && \
+    uv pip install --python /app/.venv/bin/python --no-deps .
+COPY alembic.ini ./
+COPY migrations ./migrations
+COPY config ./config
+COPY tests/sqlserver_smoke.py ./sqlserver_smoke.py
+COPY scripts/run_bounded.py ./run_bounded.py
+USER mssql
+ARG FUNDING_SQL_TEST_RUN=manual
+RUN --network=none /bin/bash -c '\
+    test -n "$FUNDING_SQL_TEST_RUN"; \
+    export ACCEPT_EULA=Y MSSQL_PID=Developer FUNDING_TEST_SQL_HOST=127.0.0.1; \
+    export MSSQL_SA_PASSWORD="F9!$(head -c 24 /dev/urandom | base64)"; \
+    /opt/mssql/bin/sqlservr > /tmp/funding-sql.log 2>&1 & sql_pid=$!; \
+    trap "kill $sql_pid 2>/dev/null || true; wait $sql_pid 2>/dev/null || true" EXIT; \
+    /app/.venv/bin/python run_bounded.py 150 /app/.venv/bin/python sqlserver_smoke.py'

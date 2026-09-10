@@ -1,0 +1,296 @@
+[
+  {
+    "id": 1,
+    "name": "EU:n kaskadihaut (FSTP)",
+    "sources": [
+      "eu-funding"
+    ],
+    "rules": [
+      {
+        "source_id": [
+          "eu-funding"
+        ],
+        "external_id_prefix": [
+          "cascade:"
+        ]
+      }
+    ],
+    "note": "EU F&T:n julkaisijan tyyppi 8. Ei tekstiosumalla päätelty FSTP eikä uusi konnektori."
+  },
+  {
+    "id": 2,
+    "name": "Opetushallitus: Erasmus+ ja Luova Eurooppa",
+    "sources": [
+      "oph",
+      "haeavustuksia"
+    ],
+    "rules": [
+      {
+        "source_id": [
+          "oph"
+        ]
+      },
+      {
+        "source_id": [
+          "haeavustuksia"
+        ],
+        "funder": [
+          "Opetushallitus"
+        ]
+      }
+    ],
+    "note": "OPH:n rahoitushaut, myös Erasmus+ ja Luovan Euroopan kansallinen vastinraha. Keskitettyjä EU-hakuja voi esiintyä myös F&T:ssä."
+  },
+  {
+    "id": 3,
+    "name": "Ympäristöministeriö ja Varke / ARA",
+    "sources": [
+      "ym",
+      "varke",
+      "haeavustuksia"
+    ],
+    "rules": [
+      {
+        "source_id": [
+          "ym",
+          "varke"
+        ]
+      },
+      {
+        "source_id": [
+          "haeavustuksia"
+        ],
+        "funder": [
+          "Ympäristöministeriö",
+          "Asumisen rahoitus- ja kehittämiskeskus",
+          "Valtion tukeman asuntorakentamisen keskus"
+        ]
+      }
+    ],
+    "note": "ARA:n tehtävät ovat Varkessa. Vanhan ohjelman olemassaolo ei tarkoita uutta avointa rahoituskierrosta."
+  },
+  {
+    "id": 4,
+    "name": "Pirkanmaan liitto: AKKE ja MYR",
+    "sources": [
+      "pirkanmaa-akke",
+      "pirkanmaa-myr",
+      "pirkanmaa-myr-decisions",
+      "pirkanmaa",
+      "haeavustuksia",
+      "eura2021"
+    ],
+    "rules": [
+      {
+        "source_id": [
+          "pirkanmaa-akke",
+          "pirkanmaa-myr"
+        ]
+      },
+      {
+        "source_id": [
+          "haeavustuksia",
+          "eura2021"
+        ],
+        "funder": [
+          "Pirkanmaan liitto"
+        ]
+      }
+    ],
+    "note": "MYR on ennakointi- ja päätösaineistoa. Kokouskohtainen poiminta on avoin katve; päätöspalvelun virhe näkyy lähdetilassa."
+  },
+  {
+    "id": 5,
+    "name": "Pirkanmaan ELY:n rahoituskanavat / elinvoimakeskukset",
+    "sources": [
+      "pirkanmaa-elinvoima",
+      "haeavustuksia"
+    ],
+    "rules": [
+      {
+        "source_id": [
+          "pirkanmaa-elinvoima"
+        ]
+      },
+      {
+        "source_id": [
+          "haeavustuksia"
+        ],
+        "funder": [
+          "Pirkanmaan ELY-keskus",
+          "Sisä-Suomen elinvoimakeskus"
+        ]
+      }
+    ],
+    "note": "EURAsta erillinen palveluluettelo. Mukana on valtakunnallisia ja muillekin alueille kohdennettuja tukia; toimivaltainen keskus ja alue tarkistettava."
+  },
+  {
+    "id": 6,
+    "name": "Interreg: Europe, Baltic Sea Region ja Central Baltic",
+    "sources": [
+      "interreg-europe",
+      "interreg-baltic",
+      "central-baltic"
+    ],
+    "rules": [
+      {
+        "source_id": [
+          "interreg-europe",
+          "interreg-baltic",
+          "central-baltic"
+        ]
+      }
+    ],
+    "note": "Ohjelmakohtaiset ehdot. Europe ja Baltic Sea Region ilmoittavat hakutauosta. Central Balticin hakukalenteri julkaistaan kuvana; alkuperäinen kuva säilytetään."
+  },
+  {
+    "id": 7,
+    "name": "LVM ja Traficom",
+    "sources": [
+      "lvm",
+      "traficom",
+      "haeavustuksia"
+    ],
+    "rules": [
+      {
+        "source_id": [
+          "lvm",
+          "traficom"
+        ]
+      },
+      {
+        "source_id": [
+          "haeavustuksia"
+        ],
+        "funder": [
+          "Liikenne- ja viestintävirasto Traficom",
+          "Liikenne- ja viestintäministeriö"
+        ]
+      }
+    ],
+    "note": "Traficomin tukimuodot ja Haeavustuksia.fi:n kierrokset. LVM:n asiakirjaseuranta erotetaan hakuilmoituksista."
+  },
+  {
+    "id": 8,
+    "name": "EIT-yhteisöjen omat haut",
+    "sources": [
+      "eit-urban",
+      "eit-climate",
+      "eit-digital",
+      "eit"
+    ],
+    "rules": [
+      {
+        "source_id": [
+          "eit-urban",
+          "eit-climate",
+          "eit-digital"
+        ]
+      }
+    ],
+    "note": "Urban Mobility, Climate KIC ja 28DIGITAL (entinen EIT Digital). Portaalin ulkopuoliset haut; kaupungin rooli, maksullisuus ja konsortion ehdot tarkistettava."
+  },
+  {
+    "id": 9,
+    "name": "Suomen Akatemia ja Business Finlandin tutkimuskumppanuudet",
+    "sources": [
+      "aka",
+      "business-finland",
+      "business-finland-calls"
+    ],
+    "rules": [
+      {
+        "source_id": [
+          "aka"
+        ]
+      },
+      {
+        "source_id": [
+          "business-finland"
+        ],
+        "title_contains": [
+          "veturi",
+          "co-innovation"
+        ]
+      },
+      {
+        "source_id": [
+          "business-finland-calls"
+        ]
+      }
+    ],
+    "note": "Akatemian nykyinen hakulista ja BF:n veturi- ja Co-Innovation-muodot. Tutkimusorganisaation kanssa tehtävä kumppanuus ei vahvista kaupungin hakijakelpoisuutta. Mukana myös julkaistu veturikilpailu 2026 ja jatkuva Co-Innovation-kumppanuushaku omilla tiloillaan."
+  },
+  {
+    "id": 10,
+    "name": "Säätiöt: Pirkanmaan rahasto, Wihuri, Kone, Erkko, Herlin",
+    "sources": [
+      "skr-pirkanmaa",
+      "skr",
+      "wihuri",
+      "kone",
+      "jane-atos",
+      "herlin-tah",
+      "herlin-riikka"
+    ],
+    "rules": [
+      {
+        "source_id": [
+          "skr-pirkanmaa",
+          "skr",
+          "wihuri",
+          "kone",
+          "jane-atos",
+          "herlin-tah",
+          "herlin-riikka"
+        ]
+      }
+    ],
+    "note": "Erkko = Jane ja Aatos Erkon säätiö. Herlin = Tiina ja Antti Herlinin sekä Riikka Herlinin säätiöt. Vuosikierron ja avoimuuden oletuksia ei kovakoodata."
+  },
+  {
+    "id": 11,
+    "name": "Nordic Innovation, NordForsk ja Nefco",
+    "sources": [
+      "nordic-innovation",
+      "nordforsk",
+      "nefco"
+    ],
+    "rules": [
+      {
+        "source_id": [
+          "nordic-innovation",
+          "nordforsk",
+          "nefco"
+        ]
+      }
+    ],
+    "note": "Kolme erillistä toimijaa. Pohjoismaiden ministerineuvoston lähdevirhe ei pysäytä näiden keruuta. Nefcon toiminta- ja hakija-alueen rajaukset tarkistettava."
+  },
+  {
+    "id": 12,
+    "name": "EIB ELENA ja Innovation Fund",
+    "sources": [
+      "eib-elena",
+      "innovation-fund-pda",
+      "eu-funding"
+    ],
+    "rules": [
+      {
+        "source_id": [
+          "eib-elena",
+          "innovation-fund-pda"
+        ]
+      },
+      {
+        "source_id": [
+          "eu-funding"
+        ],
+        "programme": [
+          "INNOVFUND"
+        ]
+      }
+    ],
+    "note": "ELENA ja Innovation Fund PDA ovat valmistelutukea. Innovation Fundin varsinaiset haut ovat eri tietueita EU F&T -lähteessä."
+  }
+]

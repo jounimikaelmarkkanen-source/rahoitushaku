@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "prefix": {
+      "value": "trefunding"
+    },
+    "location": {
+      "value": "swedencentral"
+    },
+    "registryServer": {
+      "value": "REPLACE.azurecr.io"
+    },
+    "registryResourceId": {
+      "value": "/subscriptions/REPLACE/resourceGroups/REPLACE/providers/Microsoft.ContainerRegistry/registries/REPLACE"
+    },
+    "image": {
+      "value": "REPLACE.azurecr.io/funding-registry@sha256:REPLACE"
+    },
+    "sqlAdminName": {
+      "value": "REPLACE-Entra-SQL-admin-group"
+    },
+    "sqlAdminObjectId": {
+      "value": "REPLACE-GROUP-OBJECT-ID"
+    },
+    "apiAudience": {
+      "value": "REPLACE-API-APPLICATION-CLIENT-ID"
+    },
+    "deployWorkloads": {
+      "value": false
+    },
+    "enableDailySchedule": {
+      "value": false
+    },
+    "userAgent": {
+      "value": "MunicipalFundingRegistry/0.4 (public funding monitoring; contact: REPLACE-ORGANISATION-CONTACT)"
+    }
+  }
+}

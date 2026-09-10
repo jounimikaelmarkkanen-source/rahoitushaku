@@ -1,0 +1,35 @@
+{
+  "hakuasianAsianumero": "va-lou-2026-5",
+  "nimi": {
+    "fi": "Yksityisteiden valtionavustukset",
+    "sv": "Statsbidrag för enskilda vägar",
+    "en": "discretionary government grant for private roads",
+    "richFi": null,
+    "richSv": null,
+    "richEn": null
+  },
+  "kuvaus": {
+    "fi": "Tiekunta voi hakea avustusta yksityistien parantamiseen tai erityiskohteen kuten lossin tai talvitien ylläpitoon ja kunnostamiseen",
+    "sv": "Ett väglag kan söka bidrag för förbättring av en enskild väg eller för underhåll och reparation av ett specialobjekt, såsom en färja eller en vinterväg.",
+    "en": "Discretionary government grant for private roads",
+    "richFi": null,
+    "richSv": null,
+    "richEn": null
+  },
+  "hakuAlkaaDateTimeUtc": "2025-12-31T22:00:00.000Z",
+  "hakuPaattyyDateTimeUtc": "2036-12-31T21:59:00.000Z",
+  "hakuTyyppi": "Jatkuva",
+  "julkaisuTyyppi": "Hakuilmoitus",
+  "vastuullinenJarjestajaOrganisaatio": {
+    "valtionapuorganisaatioId": "031584fe-88b6-41a5-a25f-08de0b001f1f",
+    "nimi": {
+      "fi": "Lounais-Suomen elinvoimakeskus",
+      "sv": "Livskraftscentralen i Sydvästra Finland",
+      "en": "Economic Development Centre of Southwest Finland",
+      "richFi": null,
+      "richSv": null,
+      "richEn": null
+    },
+    "lyhenne": "LOU"
+  }
+}

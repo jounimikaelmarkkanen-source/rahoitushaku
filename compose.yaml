@@ -1,0 +1,31 @@
+services:
+  api:
+    build: .
+    ports:
+      - "127.0.0.1:8765:8000"
+    environment:
+      FUNDING_DATABASE_URL: sqlite:////app/data/funding.db
+      # Entra mode is required across the Docker network; use local Python quickstart for a token-free demo.
+      FUNDING_AUTH_MODE: entra
+      FUNDING_ENTRA_TENANT_ID: ${FUNDING_ENTRA_TENANT_ID:-}
+      FUNDING_ENTRA_AUDIENCE: ${FUNDING_ENTRA_AUDIENCE:-}
+    volumes:
+      - funding-data:/app/data
+  collector:
+    build: .
+    profiles: [jobs]
+    command: ["funding", "daily", "--require-all"]
+    environment:
+      FUNDING_DATABASE_URL: sqlite:////app/data/funding.db
+    volumes:
+      - funding-data:/app/data
+  migrate:
+    build: .
+    profiles: [jobs]
+    command: ["funding", "init"]
+    environment:
+      FUNDING_DATABASE_URL: sqlite:////app/data/funding.db
+    volumes:
+      - funding-data:/app/data
+volumes:
+  funding-data:
