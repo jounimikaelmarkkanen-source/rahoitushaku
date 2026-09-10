@@ -12,33 +12,35 @@ Toimita vastaanottajalle Google Drive -kansion ja GitHub-repositorion linkit sek
 
 | Osa | Tiedosto tai kansio | Käyttö |
 |---|---|---|
-| Koko siirtopaketti | `rahoitusrekisteri-microsoft.zip` | Koodi, tietokanta, kaikki viedyt alkuperäistiedostot ja kokotekstit sekä ohjeet samassa ZIP64-paketissa. |
-| Paketin tarkistus | `rahoitusrekisteri-microsoft.sha256` | Varmistaa latauksen vastaavuuden toimitukseen. |
+| Koko siirtopaketti | `rahoitusrekisteri-azure.zip` | Koodi, koko tietokanta alkuperäisine asiakirjoineen, kokotekstit, viennit ja ohjeet samassa ZIP64-paketissa. |
+| Paketin tarkistus | `rahoitusrekisteri-azure.sha256` | Varmistaa latauksen vastaavuuden toimitukseen. |
 | Selattava poiminta | `rahoitusrekisteri.xlsx` | 16 069 tietuetta, 12 rahoitusryhmää, FSTP-suodatin ja hakukohtaiset asiakirjalinkit. |
 | Tietokanta ZIPin sisällä | `data/funding.db` | Siirrettävä SQLite-kanta, mukana myös binääriset alkuperäiset, tekstit, versiot ja suhteet. |
-| Avoimet tiedostot | `data/opportunities.csv`, `data/*.jsonl`, `data/documents/` | Käyttö muissa järjestelmissä sekä kokonaisten ehtojen avaaminen ilman palvelinta. |
+| Avoimet tiedostot | `data/opportunities.csv`, `data/*.jsonl`, `data/documents/` | Käyttö muissa järjestelmissä. Alkuperäiset palautetaan tietokannasta offline-avaamista varten. |
 | Todennus | `data/metrics.json`, `FILE-MANIFEST.json` | Tietuemäärät, tietokannan SHA-256 sekä kaikkien pakattujen tiedostojen koot ja tarkistussummat. |
 | Koodi | GitHub-repositorion `src`, `config`, `migrations`, `infra`, `integrations`, `tests` | Sovelluksen ylläpito ja toistettava käyttöönotto. |
+
+**Drive-paketin alkuperäiset asiakirjat ovat kokonaan tietokannassa.** Palauta erilliset tiedostot [Drive-paketin ohjeella](DRIVE-PAKETTI.md), jos käytät Excelin offline-asiakirjalinkkejä. Azure SQL -siirto käyttää suoraan koko tietokantaa.
 
 GitHub ei sisällä tuotantotietokantaa, suurta asiakirja-arkistoa, paikallista virtuaaliympäristöä tai kirjautumistietoja. GitHub-koodin ja Drive-aineiston yhteys varmistetaan samalla ohjelmisto- ja skeemaversiolla sekä luovutukseen kirjatulla commit-tunnisteella.
 
 ## 2. Lataa ja tarkista aineisto
 
-Lataa ZIP ja sen `.sha256`-tiedosto kokonaan. Data vie purettuna tässä toimituksessa noin 31 GiB; varaa työasemalle tai käyttöönottoagentille vähintään 80 GB vapaata tilaa latausta, purkua ja käyttöönoton työtilaa varten. ZIP käyttää suuren tiedoston ZIP64-muotoa. Käytä sitä tukevaa purkuohjelmaa ja pura kansiorakenne kokonaan.
+Lataa ZIP ja sen `.sha256`-tiedosto kokonaan. Koko aineisto vie alkuperäistiedostojen palautuksen jälkeen noin 31 GiB; varaa työasemalle tai käyttöönottoagentille vähintään 80 GB vapaata tilaa latausta, purkua ja käyttöönoton työtilaa varten. ZIP käyttää suuren tiedoston ZIP64-muotoa. Käytä sitä tukevaa purkuohjelmaa ja pura kansiorakenne kokonaan.
 
 Windows PowerShell:
 
 ```powershell
-Get-FileHash .\rahoitusrekisteri-microsoft.zip -Algorithm SHA256
+Get-FileHash .\rahoitusrekisteri-azure.zip -Algorithm SHA256
 ```
 
 Linux / macOS:
 
 ```sh
-shasum -a 256 -c rahoitusrekisteri-microsoft.sha256
+shasum -a 256 -c rahoitusrekisteri-azure.sha256
 ```
 
-Vertaa Windowsissa tulosta `.sha256`-tiedoston arvoon. Purun jälkeen avaa Excel samasta kansiosta, jonka alla `data/documents/` sijaitsee. Tällöin Haut-välilehden asiakirjalinkit toimivat. Tarkista myös [validointiraportti](VALIDOINTI.md) ja [12 rahoitusryhmän kattavuus](PRIORITEETTILÄHTEET.md).
+Vertaa Windowsissa tulosta `.sha256`-tiedoston arvoon. Palauta ensin alkuperäiset [Drive-paketin ohjeella](DRIVE-PAKETTI.md). Avaa sitten Excel samasta kansiosta, jonka alla `data/documents/` sijaitsee. Tällöin Haut-välilehden asiakirjalinkit toimivat. Tarkista myös [validointiraportti](VALIDOINTI.md) ja [12 rahoitusryhmän kattavuus](PRIORITEETTILÄHTEET.md).
 
 Jos työskentelet GitHubista kloonatussa koodikansiossa, kopioi puretun paketin `data/` sen alle. Käytä toimitusta vastaavaa commitia. `data/` on rajattu pois Git-versionhallinnasta. Kun SQL-siirto on valmis, Azure-sovellus käyttää Azure SQL:ää eikä paikallista SQLite-tiedostoa.
 

@@ -8,7 +8,7 @@ Tampereen kaupungin ulkoisen rahoituksen keruu- ja tietokantaratkaisu. Sama Pyth
 
 ## Kokeile heti
 
-Pura siirtopaketti kokonaan. Sen juuressa ovat tämä ohje ja `rahoitusrekisteri.xlsx`; `data/funding.db` on valmis SQLite-tietokanta. `data/opportunities.csv` ja `data/opportunities.jsonl` ovat yleiskäyttöisiä taulukkovientejä. Mukana ovat myös `data/documents/`-kansion alkuperäistiedostot, kokotekstit ja hakukohtaiset asiakirjaluettelot. Varaa purkuun tilaa myös tälle aineistolle.
+Pura siirtopaketti kokonaan. Sen juuressa ovat tämä ohje ja `rahoitusrekisteri.xlsx`; `data/funding.db` on valmis SQLite-tietokanta. `data/opportunities.csv` ja `data/opportunities.jsonl` ovat yleiskäyttöisiä taulukkovientejä. Mukana ovat myös kokotekstit ja hakukohtaiset asiakirjaluettelot. Driven `rahoitusrekisteri-azure.zip` säilyttää alkuperäiset kokonaan tietokannassa. Palauta niiden erilliset tiedostot [Drive-paketin ohjeella](docs/DRIVE-PAKETTI.md) ennen Excelin offline-asiakirjalinkkien käyttöä. Varaa käsittelyyn tilaa myös tälle aineistolle.
 
 1. Avaa toimituksen Excel-poiminnan **Rahoittajat**-välilehti. Haut-välilehden suodattimilla voit rajata rahoittajaa, tietuetyyppiä (hakukierros / rahoitusmuoto / ennakkotieto), rahoitusryhmää (01–12), kaskadihakuja (FSTP), ohjelmaa, hakutilaa, määräaikaa, aluetta ja tarkistustarvetta. Se on päivätty poiminta tietokannasta.
 2. Tutustu lähteiden kattavuuteen. Automaattisesti luettu hakulista ja pelkkä rahoittajan sivumuutosten seuranta ovat eri asioita.
